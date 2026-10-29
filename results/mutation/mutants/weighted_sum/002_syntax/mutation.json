@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 28,
+ "before": "product_q20<=-inverting_sum_q20;",
+ "after": "product_q20<=-inverting_sum_q20"
+}

@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 28,
+ "before": "pwm_out      <= (cnt_next < {9'd0, duty_next});",
+ "after": "pwm_out      <= (cnt_next < {9'd0, duty_next})"
+}

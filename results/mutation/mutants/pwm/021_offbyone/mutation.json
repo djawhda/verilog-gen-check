@@ -1,0 +1,8 @@
+{
+ "op": "offbyone",
+ "expect": "FUNC",
+ "desc": "比较边界差 1",
+ "line": 18,
+ "before": "wire [7:0]  duty_next = (cnt_next == 17'd0) ? duty : duty_l;",
+ "after": "wire [7:0]  duty_next = (cnt_next == 17'd1) ? duty : duty_l;"
+}

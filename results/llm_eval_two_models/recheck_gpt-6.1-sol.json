@@ -1,0 +1,1610 @@
+{
+ "gen_gpt-6.1-sol": {
+  "booth_encoder": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 2,
+   "server_first": false,
+   "server_final": true
+  },
+  "booth_mul4": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "dac_map": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "debounce": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "lin_lookup": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "pwm": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "replay_addr": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "sync_fifo": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "uart_tx": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "weighted_sum": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  }
+ },
+ "gen_static_gpt-6.1-sol": {
+  "booth_encoder": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 5,
+   "server_first": false,
+   "server_final": false
+  },
+  "booth_mul4": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "dac_map": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "debounce": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "lin_lookup": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "pwm": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "replay_addr": {
+   "first": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 9,
+    "minor": 1,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "final": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 9,
+    "minor": 1,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "sync_fifo": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "uart_tx": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 1,
+    "cats": [],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  },
+  "weighted_sum": {
+   "first": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 2,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 2,
+    "cats": [],
+    "minor_cats": [
+     "SIGN_CONV"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1,
+   "server_first": true,
+   "server_final": true
+  }
+ },
+ "repair_gpt-6.1-sol": {
+  "booth_encoder__004_latch": {
+   "op": "latch",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 1,
+    "minor": 1,
+    "cats": [
+     "LATCH",
+     "SIM_FAIL"
+    ],
+    "minor_cats": [
+     "CASE"
+    ],
+    "tools": [
+     "vvp",
+     "yosys"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "booth_encoder__005_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 0,
+    "minor": 6,
+    "cats": [
+     "SIM_FAIL"
+    ],
+    "minor_cats": [
+     "PORT",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "booth_encoder__006_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 0,
+    "minor": 6,
+    "cats": [
+     "SIM_FAIL"
+    ],
+    "minor_cats": [
+     "PORT",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "booth_mul4__000_latch": {
+   "op": "latch",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 0,
+    "minor": 1,
+    "cats": [
+     "SIM_FAIL"
+    ],
+    "minor_cats": [
+     "CASE"
+    ],
+    "tools": [
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "booth_mul4__001_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 1,
+    "minor": 1,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "booth_mul4__002_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 1,
+    "minor": 1,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "dac_map__012_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 1,
+    "minor": 1,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "dac_map__013_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 1,
+    "minor": 1,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "dac_map__014_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 1,
+    "minor": 1,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "debounce__012_multidrive": {
+   "op": "multidrive",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 2,
+    "minor": 1,
+    "cats": [
+     "MULTIDRIVEN",
+     "SIM_FAIL"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": [
+     "vcheck-rules",
+     "vvp",
+     "yosys"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "debounce__013_multidrive": {
+   "op": "multidrive",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 2,
+    "minor": 1,
+    "cats": [
+     "MULTIDRIVEN",
+     "SIM_FAIL"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": [
+     "vcheck-rules",
+     "vvp",
+     "yosys"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "debounce__014_multidrive": {
+   "op": "multidrive",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 2,
+    "minor": 1,
+    "cats": [
+     "MULTIDRIVEN",
+     "SIM_FAIL"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": [
+     "vcheck-rules",
+     "vvp",
+     "yosys"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "lin_lookup__004_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 1,
+    "minor": 0,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "lin_lookup__005_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 0,
+    "minor": 2,
+    "cats": [
+     "SIM_FAIL"
+    ],
+    "minor_cats": [
+     "OTHER",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "lin_lookup__006_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 1,
+    "minor": 1,
+    "cats": [
+     "SIM_FAIL",
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator",
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "pwm__012_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 2,
+    "minor": 2,
+    "cats": [
+     "SIM_FAIL",
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator",
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "pwm__013_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 2,
+    "minor": 2,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "pwm__014_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 1,
+    "minor": 3,
+    "cats": [
+     "SIM_FAIL",
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator",
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "replay_addr__016_latch": {
+   "op": "latch",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 1,
+    "minor": 4,
+    "cats": [
+     "LATCH"
+    ],
+    "minor_cats": [
+     "CASE",
+     "PARAM_WIDTH"
+    ],
+    "tools": [
+     "yosys"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "replay_addr__017_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 2,
+    "minor": 4,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "replay_addr__018_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 3,
+    "minor": 4,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "sync_fifo__012_multidrive": {
+   "op": "multidrive",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 1,
+    "minor": 0,
+    "cats": [
+     "MULTIDRIVEN",
+     "SIM_FAIL"
+    ],
+    "minor_cats": [],
+    "tools": [
+     "vcheck-rules",
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 2,
+    "cats": [],
+    "minor_cats": [
+     "WIDTH_EXPAND"
+    ],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "sync_fifo__013_multidrive": {
+   "op": "multidrive",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 1,
+    "minor": 0,
+    "cats": [
+     "MULTIDRIVEN",
+     "SIM_FAIL"
+    ],
+    "minor_cats": [],
+    "tools": [
+     "vcheck-rules",
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "sync_fifo__014_multidrive": {
+   "op": "multidrive",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 2,
+    "minor": 0,
+    "cats": [
+     "MULTIDRIVEN",
+     "SIM_FAIL"
+    ],
+    "minor_cats": [],
+    "tools": [
+     "vcheck-rules",
+     "vvp",
+     "yosys"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 2
+  },
+  "uart_tx__011_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 1,
+    "major": 4,
+    "minor": 3,
+    "cats": [
+     "SIM_FAIL",
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator",
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "uart_tx__012_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 4,
+    "minor": 2,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "uart_tx__013_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 2,
+    "major": 5,
+    "minor": 1,
+    "cats": [
+     "ELAB",
+     "RANGE",
+     "SIM_FAIL",
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "PARAM_WIDTH"
+    ],
+    "tools": [
+     "slang",
+     "verilator",
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "weighted_sum__012_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 2,
+    "minor": 4,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "SIGN_CONV",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "weighted_sum__013_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 3,
+    "major": 3,
+    "minor": 3,
+    "cats": [
+     "ELAB",
+     "RANGE",
+     "SIM_FAIL",
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "SIGN_CONV",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "slang",
+     "verilator",
+     "vvp"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  },
+  "weighted_sum__014_width": {
+   "op": "width",
+   "model_called": true,
+   "server_initial_pass": false,
+   "server_final": true,
+   "mutant": {
+    "passed": false,
+    "static_pass": false,
+    "blocker": 0,
+    "major": 1,
+    "minor": 3,
+    "cats": [
+     "WIDTH_TRUNC"
+    ],
+    "minor_cats": [
+     "SIGN_CONV",
+     "WIDTH_EXPAND"
+    ],
+    "tools": [
+     "verilator"
+    ]
+   },
+   "model_final": {
+    "passed": true,
+    "static_pass": true,
+    "blocker": 0,
+    "major": 0,
+    "minor": 0,
+    "cats": [],
+    "minor_cats": [],
+    "tools": []
+   },
+   "n_rounds": 1
+  }
+ }
+}

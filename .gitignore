@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+runs/
+results/gen_*/
+results/repair_*/*/round_*/
+*.vcd
+*.vvp
+a.out
+.env

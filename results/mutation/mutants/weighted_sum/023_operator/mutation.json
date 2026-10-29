@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 23,
+ "before": "rounded_magnitude<=(numerator[27] ? -numerator : numerator)+28'd10;",
+ "after": "rounded_magnitude<=(numerator[27] ? -numerator : numerator)-28'd10;"
+}

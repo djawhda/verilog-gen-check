@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 38,
+ "before": "bitn <= bitn + 4'd1;",
+ "after": "bitn <= bitn + 4'd1"
+}

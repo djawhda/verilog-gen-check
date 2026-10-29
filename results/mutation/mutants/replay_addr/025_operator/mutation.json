@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 38,
+ "before": "wire [11:0] idx_next = wrap ? 12'd0 : idx + 12'd1;",
+ "after": "wire [11:0] idx_next = wrap ? 12'd0 : idx - 12'd1;"
+}

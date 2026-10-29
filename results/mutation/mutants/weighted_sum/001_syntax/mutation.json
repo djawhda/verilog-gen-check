@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 27,
+ "before": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient});",
+ "after": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient})"
+}

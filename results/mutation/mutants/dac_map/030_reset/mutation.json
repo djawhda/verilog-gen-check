@@ -1,0 +1,8 @@
+{
+ "op": "reset",
+ "expect": "FUNC",
+ "desc": "漏掉一个复位赋值",
+ "line": 25,
+ "before": "code      <= 10'd512;",
+ "after": ""
+}

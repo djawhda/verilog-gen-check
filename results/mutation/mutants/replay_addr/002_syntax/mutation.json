@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 47,
+ "before": "sync     <= 1'b0;",
+ "after": "sync     <= 1'b0"
+}

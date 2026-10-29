@@ -1,0 +1,8 @@
+{
+ "op": "blocking",
+ "expect": "BLKSEQ",
+ "desc": "时序块里 <= 改成 =",
+ "line": 18,
+ "before": "i_lin <= $signed(lut[idx]);",
+ "after": "i_lin = $signed(lut[idx]);"
+}

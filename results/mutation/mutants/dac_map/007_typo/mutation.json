@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 32,
+ "before": "sat  <= lo | hi;",
+ "after": "sat  <= lo_r | hi;"
+}

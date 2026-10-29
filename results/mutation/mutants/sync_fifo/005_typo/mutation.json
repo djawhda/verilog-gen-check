@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 39,
+ "before": "dout <= mem[rp[DEPTH_LOG2-1:0]];",
+ "after": "dout <= mem[rp_r[DEPTH_LOG2-1:0]];"
+}

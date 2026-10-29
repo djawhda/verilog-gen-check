@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 18,
+ "before": "wire signed [47:0] acc = x48 * g48 + O;",
+ "after": "wire signed [47:0] acc = x48 * g48 - O;"
+}

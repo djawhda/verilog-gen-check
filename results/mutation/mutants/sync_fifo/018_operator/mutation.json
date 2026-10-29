@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 21,
+ "before": "assign count = wp - rp;",
+ "after": "assign count = wp + rp;"
+}

@@ -1,0 +1,8 @@
+{
+ "op": "width",
+ "expect": "WIDTH_TRUNC",
+ "desc": "内部信号位宽少 1 位",
+ "line": 15,
+ "before": "wire [11:0] idx    = offset[15:4];",
+ "after": "wire [10:0] idx    = offset[15:4];"
+}

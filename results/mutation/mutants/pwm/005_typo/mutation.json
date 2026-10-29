@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 27,
+ "before": "period_start <= (cnt_next == 17'd0);",
+ "after": "period_start <= (cnt_next_r == 17'd0);"
+}

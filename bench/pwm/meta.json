@@ -1,0 +1,12 @@
+{
+ "group": "通用",
+ "difficulty": "中",
+ "focus": "寄存器输出与计数器同拍、周期起点锁存",
+ "top": "pwm",
+ "ref": "pwm.v",
+ "tb": "tb.sv",
+ "spec": "spec.md",
+ "extra_files": [],
+ "forbid": [],
+ "ref_source": "本题库编写"
+}

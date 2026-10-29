@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 12,
+ "before": "assign unscaled_q20=pp0_q20+(pp1_q20<<<2);",
+ "after": "assign unscaled_q20=pp0_q20-(pp1_q20<<<2);"
+}

@@ -1,0 +1,8 @@
+{
+ "op": "blocking",
+ "expect": "BLKSEQ",
+ "desc": "时序块里 <= 改成 =",
+ "line": 22,
+ "before": "numerator<=(u<<<3)+u;",
+ "after": "numerator=(u<<<3)+u;"
+}

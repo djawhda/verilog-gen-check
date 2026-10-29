@@ -1,0 +1,8 @@
+{
+ "op": "latch",
+ "expect": "LATCH",
+ "desc": "删掉组合 case 的 default 分支",
+ "line": 42,
+ "before": "default: begin digit=0; address=0; end",
+ "after": ""
+}

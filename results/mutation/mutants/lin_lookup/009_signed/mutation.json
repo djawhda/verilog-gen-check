@@ -1,0 +1,8 @@
+{
+ "op": "signed",
+ "expect": "SIGN",
+ "desc": "去掉一个 signed",
+ "line": 8,
+ "before": "output reg  signed [15:0] i_lin",
+ "after": "output reg  [15:0] i_lin"
+}

@@ -1,0 +1,8 @@
+{
+ "op": "width",
+ "expect": "WIDTH_TRUNC",
+ "desc": "内部信号位宽少 1 位",
+ "line": 23,
+ "before": "wire signed [7:0] pp1x4 = pp1 <<< 2;                // 4·pp1",
+ "after": "wire signed [6:0] pp1x4 = pp1 <<< 2;                // 4·pp1"
+}

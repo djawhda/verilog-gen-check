@@ -1,0 +1,8 @@
+{
+ "op": "reset",
+ "expect": "FUNC",
+ "desc": "漏掉一个复位赋值",
+ "line": 22,
+ "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+ "after": "cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;"
+}

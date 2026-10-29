@@ -1,0 +1,8 @@
+{
+ "op": "reset",
+ "expect": "FUNC",
+ "desc": "漏掉一个复位赋值",
+ "line": 30,
+ "before": "wp   <= {(DEPTH_LOG2+1){1'b0}};",
+ "after": ""
+}

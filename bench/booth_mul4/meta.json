@@ -1,0 +1,17 @@
+{
+ "group": "Booth 乘法器",
+ "difficulty": "中",
+ "focus": "Booth 算法、符号扩展、禁止乘法运算符",
+ "forbid": [
+  {
+   "regex": "(?<![(/])\\*(?![)/*])",
+   "why": "规格要求用移位/取反实现，不能用乘法运算符 *"
+  }
+ ],
+ "top": "booth_mul4",
+ "ref": "booth_mul4.v",
+ "tb": "tb.sv",
+ "spec": "spec.md",
+ "extra_files": [],
+ "ref_source": "本题库编写"
+}

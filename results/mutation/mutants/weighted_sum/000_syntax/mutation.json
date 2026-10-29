@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 25,
+ "before": "quotient<=rounded_magnitude/28'd20;",
+ "after": "quotient<=rounded_magnitude/28'd20"
+}

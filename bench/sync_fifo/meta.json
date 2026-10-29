@@ -1,0 +1,12 @@
+{
+ "group": "通用",
+ "difficulty": "中",
+ "focus": "满/空判断、同时读写",
+ "top": "sync_fifo",
+ "ref": "sync_fifo.v",
+ "tb": "tb.sv",
+ "spec": "spec.md",
+ "extra_files": [],
+ "forbid": [],
+ "ref_source": "本题库编写"
+}

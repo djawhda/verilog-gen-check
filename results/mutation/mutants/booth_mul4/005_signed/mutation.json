@@ -1,0 +1,8 @@
+{
+ "op": "signed",
+ "expect": "SIGN",
+ "desc": "去掉一个 signed",
+ "line": 6,
+ "before": "output wire signed [7:0] p",
+ "after": "output wire [7:0] p"
+}

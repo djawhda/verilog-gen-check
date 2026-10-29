@@ -1,0 +1,8 @@
+{
+ "op": "blocking",
+ "expect": "BLKSEQ",
+ "desc": "时序块里 <= 改成 =",
+ "line": 17,
+ "before": "numerator<=0; rounded_magnitude<=0; quotient<=0;",
+ "after": "numerator<=0; rounded_magnitude<=0; quotient=0;"
+}

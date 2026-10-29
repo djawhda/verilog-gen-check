@@ -1,0 +1,8 @@
+{
+ "op": "signed",
+ "expect": "SIGN",
+ "desc": "去掉一个 signed",
+ "line": 16,
+ "before": "wire signed [47:0] x48 = $signed({{32{x[15]}}, x});   // 显式符号扩展",
+ "after": "wire [47:0] x48 = $signed({{32{x[15]}}, x});   // 显式符号扩展"
+}

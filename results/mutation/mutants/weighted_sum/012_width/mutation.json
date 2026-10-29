@@ -1,0 +1,8 @@
+{
+ "op": "width",
+ "expect": "WIDTH_TRUNC",
+ "desc": "内部信号位宽少 1 位",
+ "line": 9,
+ "before": "reg [27:0] rounded_magnitude=0,quotient=0;",
+ "after": "reg [26:0] rounded_magnitude=0,quotient=0;"
+}

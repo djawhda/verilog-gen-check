@@ -1,0 +1,8 @@
+{
+ "op": "signed",
+ "expect": "SIGN",
+ "desc": "去掉一个 signed",
+ "line": 27,
+ "before": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient});",
+ "after": "inverting_sum_q20<=negative_delayed ? ({4'b0,quotient}) : -$signed({4'b0,quotient});"
+}

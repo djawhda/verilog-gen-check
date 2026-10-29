@@ -1,0 +1,8 @@
+{
+ "op": "blocking",
+ "expect": "BLKSEQ",
+ "desc": "时序块里 <= 改成 =",
+ "line": 22,
+ "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+ "after": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start = 1'b0;"
+}

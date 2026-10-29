@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 30,
+ "before": "wp   <= {(DEPTH_LOG2+1){1'b0}};",
+ "after": "wp   <= {(DEPTH_LOG2_r+1){1'b0}};"
+}

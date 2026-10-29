@@ -1,0 +1,12 @@
+{
+ "group": "TaOx 回放",
+ "difficulty": "中",
+ "focus": "48 位有符号定点、负增益、钳位",
+ "top": "dac_map",
+ "ref": "dac_map.v",
+ "tb": "tb.sv",
+ "spec": "spec.md",
+ "extra_files": [],
+ "forbid": [],
+ "ref_source": "本题库编写"
+}

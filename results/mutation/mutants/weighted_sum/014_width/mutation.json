@@ -1,0 +1,8 @@
+{
+ "op": "width",
+ "expect": "WIDTH_TRUNC",
+ "desc": "内部信号位宽少 1 位",
+ "line": 11,
+ "before": "wire signed [27:0] u=unscaled_q20[27:0];",
+ "after": "wire signed [26:0] u=unscaled_q20[27:0];"
+}

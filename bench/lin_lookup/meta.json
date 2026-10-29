@@ -1,0 +1,14 @@
+{
+ "group": "TaOx 回放",
+ "difficulty": "易",
+ "focus": "ROM 初始化、偏移地址不溢出",
+ "extra_files": [
+  "lut_asinh_to_linear.mem"
+ ],
+ "top": "lin_lookup",
+ "ref": "lin_lookup.v",
+ "tb": "tb.sv",
+ "spec": "spec.md",
+ "forbid": [],
+ "ref_source": "本题库编写"
+}

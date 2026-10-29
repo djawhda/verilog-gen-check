@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 17,
+ "before": "wire [16:0] cnt_next  = (!started || cnt == LAST) ? 17'd0 : cnt + 17'd1;",
+ "after": "wire [16:0] cnt_next  = (!started || cnt == LAST) ? 17'd0 : cnt - 17'd1;"
+}

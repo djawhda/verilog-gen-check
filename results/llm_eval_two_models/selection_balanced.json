@@ -1,0 +1,182 @@
+[
+ {
+  "task": "booth_encoder",
+  "mutant": "005_width",
+  "op": "width",
+  "source_sha256": "efa5b653a886cd2936ef5bbc43bdae25f865959d6187449bb31d05aacab3dc22"
+ },
+ {
+  "task": "booth_encoder",
+  "mutant": "004_latch",
+  "op": "latch",
+  "source_sha256": "d2b0cd70c8c97a717f52a710429912f9cdcfbfd19b5761bb89f295cc524fcbac"
+ },
+ {
+  "task": "booth_encoder",
+  "mutant": "007_signed",
+  "op": "signed",
+  "source_sha256": "fb0b18141257057f193abc0a04232100d3a87cae3795e1544bc8933cb3603d8b"
+ },
+ {
+  "task": "booth_mul4",
+  "mutant": "000_latch",
+  "op": "latch",
+  "source_sha256": "634835343d1ba101d4ab3f3211089534c2d251dd0e0a7cd8f30c773cde5a8f2f"
+ },
+ {
+  "task": "booth_mul4",
+  "mutant": "009_multidrive",
+  "op": "multidrive",
+  "source_sha256": "0253051c413e310cc5e90e6b08d9317cc062ba1ec3661e052cdb1f1c1d4ef199"
+ },
+ {
+  "task": "booth_mul4",
+  "mutant": "013_operator",
+  "op": "operator",
+  "source_sha256": "627d4805f8acb6182820f2ebb1bf0614c1840b8113b9ab4ddfe7f2dc405b466d"
+ },
+ {
+  "task": "dac_map",
+  "mutant": "020_multidrive",
+  "op": "multidrive",
+  "source_sha256": "db716f578ffa93f3c68abf25b760f40d537454474d4beab989b81c721d85fdf2"
+ },
+ {
+  "task": "dac_map",
+  "mutant": "029_reset",
+  "op": "reset",
+  "source_sha256": "1317c17d155b491f822687f936d01a5faa20faa819d6c4ab63f732fe8269bd85"
+ },
+ {
+  "task": "dac_map",
+  "mutant": "024_offbyone",
+  "op": "offbyone",
+  "source_sha256": "ddd9274d881ee1d6d94510a60ffe2a0b0a54f289df1d6aeb049175680d73d00b"
+ },
+ {
+  "task": "debounce",
+  "mutant": "012_multidrive",
+  "op": "multidrive",
+  "source_sha256": "93ed3bf7ac34c86b55965ad109a6936e3aa2e481dc71b28e480aa06e5d9c3d40"
+ },
+ {
+  "task": "debounce",
+  "mutant": "017_reset",
+  "op": "reset",
+  "source_sha256": "400fb6e3066244c49d96dbad29469b317b4994e160ccfbae0cbbd3ba407bfd77"
+ },
+ {
+  "task": "debounce",
+  "mutant": "016_operator",
+  "op": "operator",
+  "source_sha256": "b2de56a13c58607f91e504928ec2567ee1d1a16ad17b032b11a3a1490543cb53"
+ },
+ {
+  "task": "lin_lookup",
+  "mutant": "004_width",
+  "op": "width",
+  "source_sha256": "5854e1605a93d9a661577a6908a91706ad09aff6b4f21c6bcc391df2245fa3df"
+ },
+ {
+  "task": "lin_lookup",
+  "mutant": "010_multidrive",
+  "op": "multidrive",
+  "source_sha256": "01fec9d7c7e1abaf4e675d71bf0566c9f30360f1249a9a1f00a163ca3d691a1f"
+ },
+ {
+  "task": "lin_lookup",
+  "mutant": "005_width",
+  "op": "width",
+  "source_sha256": "940fd4f87fc50dbaba41d07a6119e55f4d9c049f7d8940c71242b6e325409dfb"
+ },
+ {
+  "task": "pwm",
+  "mutant": "012_width",
+  "op": "width",
+  "source_sha256": "381d06ade63334837322e930e4e8d52f4e3f0b37af463796f23aa52a235c109a"
+ },
+ {
+  "task": "pwm",
+  "mutant": "016_multidrive",
+  "op": "multidrive",
+  "source_sha256": "c51a410f7c4d8a64c49353029af536075847ef5ace20b9083d040f9042a7b0c8"
+ },
+ {
+  "task": "pwm",
+  "mutant": "025_reset",
+  "op": "reset",
+  "source_sha256": "ff17263de383d7cbe46f48241858b1b955126eff536734cf29e392b657d514e1"
+ },
+ {
+  "task": "replay_addr",
+  "mutant": "016_latch",
+  "op": "latch",
+  "source_sha256": "cf17343d66faf1360b9a4f9a32fe0ed8dbaa5276182e35a1394162d2f0f80485"
+ },
+ {
+  "task": "replay_addr",
+  "mutant": "021_multidrive",
+  "op": "multidrive",
+  "source_sha256": "7f08a64ee479dca1f4360fb488fc27be043c28ba903d5036a3474ebe70ec6182"
+ },
+ {
+  "task": "replay_addr",
+  "mutant": "027_reset",
+  "op": "reset",
+  "source_sha256": "adf0c8f11567b8dc1f8eb1ec6884c42248f07f6c749f8b70204d6e381073daa8"
+ },
+ {
+  "task": "sync_fifo",
+  "mutant": "019_reset",
+  "op": "reset",
+  "source_sha256": "0709ab2ab9d96f019011e61c86aff948a3487b9528044e8a156660fbcc8298cb"
+ },
+ {
+  "task": "sync_fifo",
+  "mutant": "016_operator",
+  "op": "operator",
+  "source_sha256": "43e6e3c0f156ff37ee02a1695af427b15f66dbf25674d237dfeb71b1f9051fcd"
+ },
+ {
+  "task": "sync_fifo",
+  "mutant": "012_multidrive",
+  "op": "multidrive",
+  "source_sha256": "1e53ffe40fe7694ba3939dc392998984cb565121a49b4c26d8c95e71633858f1"
+ },
+ {
+  "task": "uart_tx",
+  "mutant": "018_offbyone",
+  "op": "offbyone",
+  "source_sha256": "bed529f0bd557efa10601199e40e4a5ff825c6d8744b25b365aa6cde97caec86"
+ },
+ {
+  "task": "uart_tx",
+  "mutant": "020_operator",
+  "op": "operator",
+  "source_sha256": "a3ac22ea56e2afdf756760623f25fe962e7aae8d01a77699ec51b74a3325a19c"
+ },
+ {
+  "task": "uart_tx",
+  "mutant": "011_width",
+  "op": "width",
+  "source_sha256": "e33b6a60314b29324e03d3b10c970394dfbaefd92b03e0af5b60e2b59d02be78"
+ },
+ {
+  "task": "weighted_sum",
+  "mutant": "012_width",
+  "op": "width",
+  "source_sha256": "3d2f06ecbf14b6bfd5f0780069f442fde5ac2a6694e3dd26d93a2b4631eb6f6e"
+ },
+ {
+  "task": "weighted_sum",
+  "mutant": "019_multidrive",
+  "op": "multidrive",
+  "source_sha256": "35a28368cbe7a672fdf11869d56dd85a4008a75d8b764adb4b03f2ff7626b58c"
+ },
+ {
+  "task": "weighted_sum",
+  "mutant": "023_operator",
+  "op": "operator",
+  "source_sha256": "0896a13ff44a0ee9a8b9e2e4efb7a414703dafd33e9c663d2e0753a86373340b"
+ }
+]

@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 22,
+ "before": "numerator<=(u<<<3)+u;",
+ "after": "numerator<=(u<<<3)-u;"
+}

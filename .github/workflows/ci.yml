@@ -1,0 +1,32 @@
+name: vcheck self-test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  golden:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install EDA tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog verilator yosys
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pyslang
+        run: pip install "pyslang==12.1.0"
+      - name: Tool versions
+        run: |
+          iverilog -V | head -1
+          verilator --version
+          yosys -V
+          python -c "import pyslang; print('pyslang', pyslang.__version__)"
+      - name: Golden answers pass all static layers and testbenches
+        run: |
+          python tools/benchlib.py | tee golden.txt
+          ! grep -q '^BAD' golden.txt
+      - name: Mutation detection smoke test (1 mutant per class)
+        run: python tools/eval_mutants.py --out /tmp/mut --per-op 1 --seed 1

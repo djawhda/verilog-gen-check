@@ -1,0 +1,8 @@
+{
+ "op": "nonblocking",
+ "expect": "COMBDLY",
+ "desc": "组合块里 = 改成 <=",
+ "line": 29,
+ "before": "3'd3: div_last = L3;",
+ "after": "3'd3: div_last <= L3;"
+}

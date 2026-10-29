@@ -1,0 +1,8 @@
+{
+ "op": "width",
+ "expect": "WIDTH_TRUNC",
+ "desc": "内部信号位宽少 1 位",
+ "line": 17,
+ "before": "wire signed [47:0] g48 = $signed({{16{G[31]}}, G});",
+ "after": "wire signed [46:0] g48 = $signed({{16{G[31]}}, G});"
+}

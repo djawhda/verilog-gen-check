@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 53,
+ "before": "sync    <= wrap;",
+ "after": "sync    <= wrap_r;"
+}

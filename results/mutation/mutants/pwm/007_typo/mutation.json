@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 28,
+ "before": "pwm_out      <= (cnt_next < {9'd0, duty_next});",
+ "after": "pwm_out      <= (cnt_next < {9'd0, duty_next_r});"
+}

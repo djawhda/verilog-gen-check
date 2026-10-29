@@ -1,0 +1,8 @@
+{
+ "op": "offbyone",
+ "expect": "FUNC",
+ "desc": "比较边界差 1",
+ "line": 39,
+ "before": "if (bitn == 4'd8) tx <= 1'b1;",
+ "after": "if (bitn == 4'd9) tx <= 1'b1;"
+}

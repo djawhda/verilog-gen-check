@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 40,
+ "before": "else begin tx <= shreg[0]; shreg <= {1'b0, shreg[7:1]}; end",
+ "after": "else begin tx <= shreg_r[0]; shreg <= {1'b0, shreg[7:1]}; end"
+}

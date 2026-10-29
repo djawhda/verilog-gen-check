@@ -1,0 +1,8 @@
+{
+ "op": "offbyone",
+ "expect": "FUNC",
+ "desc": "比较边界差 1",
+ "line": 27,
+ "before": "period_start <= (cnt_next == 17'd0);",
+ "after": "period_start <= (cnt_next == 17'd1);"
+}

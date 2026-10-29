@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 39,
+ "before": "if (bitn == 4'd8) tx <= 1'b1;",
+ "after": "if (bitn == 4'd8) tx <= 1'b1"
+}

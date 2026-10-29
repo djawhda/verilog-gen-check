@@ -1,0 +1,8 @@
+{
+ "op": "signed",
+ "expect": "SIGN",
+ "desc": "去掉一个 signed",
+ "line": 17,
+ "before": "wire signed [47:0] g48 = $signed({{16{G[31]}}, G});",
+ "after": "wire signed [47:0] g48 = ({{16{G[31]}}, G});"
+}

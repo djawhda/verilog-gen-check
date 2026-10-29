@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 31,
+ "before": "code <= lo ? 10'd0 : (hi ? 10'd1023 : y[9:0]);",
+ "after": "code <= lo_r ? 10'd0 : (hi ? 10'd1023 : y[9:0]);"
+}

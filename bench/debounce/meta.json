@@ -1,0 +1,12 @@
+{
+ "group": "通用",
+ "difficulty": "易",
+ "focus": "跨时钟域同步、计数消抖",
+ "top": "debounce",
+ "ref": "debounce.v",
+ "tb": "tb.sv",
+ "spec": "spec.md",
+ "extra_files": [],
+ "forbid": [],
+ "ref_source": "本题库编写"
+}

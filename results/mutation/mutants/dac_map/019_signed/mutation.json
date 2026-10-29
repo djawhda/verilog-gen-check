@@ -1,0 +1,8 @@
+{
+ "op": "signed",
+ "expect": "SIGN",
+ "desc": "去掉一个 signed",
+ "line": 4,
+ "before": "parameter signed [31:0] G = 32'sd26817,",
+ "after": "parameter [31:0] G = 32'sd26817,"
+}

@@ -1,0 +1,8 @@
+{
+ "op": "reset",
+ "expect": "FUNC",
+ "desc": "漏掉一个复位赋值",
+ "line": 17,
+ "before": "numerator<=0; rounded_magnitude<=0; quotient<=0;",
+ "after": "numerator<=0; rounded_magnitude<=0;"
+}

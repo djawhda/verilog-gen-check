@@ -1,0 +1,8 @@
+{
+ "op": "multidrive",
+ "expect": "MULTIDRIVEN",
+ "desc": "同一信号多加一个驱动",
+ "line": null,
+ "before": "endmodule",
+ "after": "always @(posedge clk) pwm_out <= 0;"
+}

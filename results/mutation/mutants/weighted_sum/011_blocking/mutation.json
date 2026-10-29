@@ -1,0 +1,8 @@
+{
+ "op": "blocking",
+ "expect": "BLKSEQ",
+ "desc": "时序块里 <= 改成 =",
+ "line": 19,
+ "before": "inverting_sum_q20<=0; product_q20<=0;",
+ "after": "inverting_sum_q20<=0; product_q20=0;"
+}

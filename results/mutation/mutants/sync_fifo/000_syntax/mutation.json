@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 35,
+ "before": "mem[wp[DEPTH_LOG2-1:0]] <= din;",
+ "after": "mem[wp[DEPTH_LOG2-1:0]] <= din"
+}

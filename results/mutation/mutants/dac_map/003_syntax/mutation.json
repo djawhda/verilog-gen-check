@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 25,
+ "before": "code      <= 10'd512;",
+ "after": "code      <= 10'd512"
+}

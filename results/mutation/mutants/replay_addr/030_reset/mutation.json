@@ -1,0 +1,8 @@
+{
+ "op": "reset",
+ "expect": "FUNC",
+ "desc": "漏掉一个复位赋值",
+ "line": 45,
+ "before": "addr     <= {slot, 12'd0};",
+ "after": ""
+}

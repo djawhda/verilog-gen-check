@@ -1,0 +1,8 @@
+{
+ "op": "reset",
+ "expect": "FUNC",
+ "desc": "漏掉一个复位赋值",
+ "line": 20,
+ "before": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+ "after": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0;  rise <= 1'b0; fall <= 1'b0;"
+}

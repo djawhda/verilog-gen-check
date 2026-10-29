@@ -1,0 +1,8 @@
+{
+ "op": "width",
+ "expect": "WIDTH_TRUNC",
+ "desc": "内部信号位宽少 1 位",
+ "line": 19,
+ "before": "reg [2:0]  cur_slot;",
+ "after": "reg [1:0]  cur_slot;"
+}

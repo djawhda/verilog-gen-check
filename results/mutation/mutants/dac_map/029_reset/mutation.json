@@ -1,0 +1,8 @@
+{
+ "op": "reset",
+ "expect": "FUNC",
+ "desc": "漏掉一个复位赋值",
+ "line": 26,
+ "before": "sat       <= 1'b0;",
+ "after": ""
+}

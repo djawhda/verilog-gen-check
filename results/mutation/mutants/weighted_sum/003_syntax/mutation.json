@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 26,
+ "before": "negative_delayed<=negative;",
+ "after": "negative_delayed<=negative"
+}

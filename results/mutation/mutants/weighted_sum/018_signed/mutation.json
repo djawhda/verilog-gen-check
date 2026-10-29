@@ -1,0 +1,8 @@
+{
+ "op": "signed",
+ "expect": "SIGN",
+ "desc": "去掉一个 signed",
+ "line": 6,
+ "before": "output reg signed [31:0] inverting_sum_q20=0,",
+ "after": "output reg [31:0] inverting_sum_q20=0,"
+}

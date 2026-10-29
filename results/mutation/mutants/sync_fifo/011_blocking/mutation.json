@@ -1,0 +1,8 @@
+{
+ "op": "blocking",
+ "expect": "BLKSEQ",
+ "desc": "时序块里 <= 改成 =",
+ "line": 30,
+ "before": "wp   <= {(DEPTH_LOG2+1){1'b0}};",
+ "after": "wp   = {(DEPTH_LOG2+1){1'b0}};"
+}

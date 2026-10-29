@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 35,
+ "before": "active <= 1'b1; bitn <= 4'd0; shreg <= data; tx <= 1'b0;",
+ "after": "active <= 1'b1; bitn <= 4'd0; shreg <= data; tx <= 1'b0"
+}

@@ -1,0 +1,1494 @@
+{
+ "args": {
+  "mode": "repair",
+  "backend": "openai",
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com/v1",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "cmd": null,
+  "replay_dir": null,
+  "temperature": 0.2,
+  "timeout": 1200,
+  "rounds": 5,
+  "feedback": "full",
+  "bench": "bench",
+  "tasks": null,
+  "mutants": "results\\mutation\\mutants",
+  "ops": [
+   "width",
+   "latch",
+   "signed",
+   "multidrive",
+   "reset",
+   "offbyone",
+   "operator"
+  ],
+  "per_task": 3,
+  "autofix_first": true,
+  "out": "results\\repair_balanced_deepseek-v4-pro"
+ },
+ "results": [
+  {
+   "task": "booth_encoder__005_width",
+   "top": "booth_encoder",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 191.0,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 2,
+     "waived": 0,
+     "categories": {
+      "SIGN_CONV": 2
+     }
+    }
+   ],
+   "op": "width"
+  },
+  {
+   "task": "booth_encoder__004_latch",
+   "top": "booth_encoder",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 233.7,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "latch"
+  },
+  {
+   "task": "booth_encoder__007_signed",
+   "top": "booth_encoder",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 128.2,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "signed"
+  },
+  {
+   "task": "booth_mul4__000_latch",
+   "top": "booth_mul4",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 288.1,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "latch"
+  },
+  {
+   "task": "booth_mul4__009_multidrive",
+   "top": "booth_mul4",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 195.6,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "multidrive"
+  },
+  {
+   "task": "booth_mul4__013_operator",
+   "top": "booth_mul4",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 145.1,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "operator"
+  },
+  {
+   "task": "dac_map__020_multidrive",
+   "top": "dac_map",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 290.3,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "multidrive"
+  },
+  {
+   "task": "dac_map__029_reset",
+   "top": "dac_map",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 144.9,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "reset"
+  },
+  {
+   "task": "dac_map__024_offbyone",
+   "top": "dac_map",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 144.2,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "offbyone"
+  },
+  {
+   "task": "debounce__012_multidrive",
+   "top": "debounce",
+   "mode": "repair",
+   "first_compiled": false,
+   "first_static_pass": false,
+   "first_sim_pass": false,
+   "first_pass": false,
+   "final_pass": true,
+   "rounds_used": 2,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 123.2,
+     "compiled": false,
+     "static_pass": false,
+     "sim_pass": false,
+     "passed": false,
+     "blocker": 2,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {
+      "SYNTAX": 1,
+      "ELAB": 1
+     }
+    },
+    {
+     "round": 2,
+     "model_seconds": 472.8,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "PARAM_WIDTH": 1
+     }
+    }
+   ],
+   "op": "multidrive"
+  },
+  {
+   "task": "debounce__017_reset",
+   "top": "debounce",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 264.2,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "reset"
+  },
+  {
+   "task": "debounce__016_operator",
+   "top": "debounce",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": false,
+   "first_sim_pass": true,
+   "first_pass": false,
+   "final_pass": true,
+   "rounds_used": 2,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 185.0,
+     "compiled": true,
+     "static_pass": false,
+     "sim_pass": true,
+     "passed": false,
+     "blocker": 0,
+     "major": 1,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "WIDTH_EXPAND": 1,
+      "SIGN": 1
+     }
+    },
+    {
+     "round": 2,
+     "model_seconds": 140.0,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "PARAM_WIDTH": 1
+     }
+    }
+   ],
+   "op": "operator"
+  },
+  {
+   "task": "lin_lookup__004_width",
+   "top": "lin_lookup",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 222.4,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {
+      "UNUSED": 1
+     }
+    }
+   ],
+   "op": "width"
+  },
+  {
+   "task": "lin_lookup__010_multidrive",
+   "top": "lin_lookup",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 152.0,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "UNUSED": 1,
+      "SIGN_CONV": 1
+     }
+    }
+   ],
+   "op": "multidrive"
+  },
+  {
+   "task": "lin_lookup__005_width",
+   "top": "lin_lookup",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 127.9,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "UNUSED": 1,
+      "SIGN_CONV": 1
+     }
+    }
+   ],
+   "op": "width"
+  },
+  {
+   "task": "pwm__012_width",
+   "top": "pwm",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 208.9,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "width"
+  },
+  {
+   "task": "pwm__016_multidrive",
+   "top": "pwm",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 441.2,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "multidrive"
+  },
+  {
+   "task": "pwm__025_reset",
+   "top": "pwm",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 334.7,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "reset"
+  },
+  {
+   "task": "replay_addr__016_latch",
+   "top": "replay_addr",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 375.5,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "latch"
+  },
+  {
+   "task": "replay_addr__021_multidrive",
+   "top": "replay_addr",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 234.4,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "multidrive"
+  },
+  {
+   "task": "replay_addr__027_reset",
+   "top": "replay_addr",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 152.2,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "reset"
+  },
+  {
+   "task": "sync_fifo__019_reset",
+   "top": "sync_fifo",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 167.9,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "PARAM_WIDTH": 1
+     }
+    }
+   ],
+   "op": "reset"
+  },
+  {
+   "task": "sync_fifo__016_operator",
+   "top": "sync_fifo",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 310.9,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "PARAM_WIDTH": 1
+     }
+    }
+   ],
+   "op": "operator"
+  },
+  {
+   "task": "sync_fifo__012_multidrive",
+   "top": "sync_fifo",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 265.7,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "PARAM_WIDTH": 1
+     }
+    }
+   ],
+   "op": "multidrive"
+  },
+  {
+   "task": "uart_tx__018_offbyone",
+   "top": "uart_tx",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 333.6,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "offbyone"
+  },
+  {
+   "task": "uart_tx__020_operator",
+   "top": "uart_tx",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 363.0,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "operator"
+  },
+  {
+   "task": "uart_tx__011_width",
+   "top": "uart_tx",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": false,
+   "first_sim_pass": true,
+   "first_pass": false,
+   "final_pass": true,
+   "rounds_used": 2,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 201.5,
+     "compiled": true,
+     "static_pass": false,
+     "sim_pass": true,
+     "passed": false,
+     "blocker": 0,
+     "major": 1,
+     "minor": 0,
+     "waived": 0,
+     "categories": {
+      "SIGN": 1
+     }
+    },
+    {
+     "round": 2,
+     "model_seconds": 131.7,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "width"
+  },
+  {
+   "task": "weighted_sum__012_width",
+   "top": "weighted_sum",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 227.6,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 0,
+     "waived": 0,
+     "categories": {}
+    }
+   ],
+   "op": "width"
+  },
+  {
+   "task": "weighted_sum__019_multidrive",
+   "top": "weighted_sum",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 358.9,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "WIDTH_EXPAND": 1
+     }
+    }
+   ],
+   "op": "multidrive"
+  },
+  {
+   "task": "weighted_sum__023_operator",
+   "top": "weighted_sum",
+   "mode": "repair",
+   "first_compiled": true,
+   "first_static_pass": true,
+   "first_sim_pass": true,
+   "first_pass": true,
+   "final_pass": true,
+   "rounds_used": 1,
+   "history": [
+    {
+     "round": 0,
+     "source": "autofix",
+     "steps": []
+    },
+    {
+     "round": 1,
+     "model_seconds": 330.9,
+     "compiled": true,
+     "static_pass": true,
+     "sim_pass": true,
+     "passed": true,
+     "blocker": 0,
+     "major": 0,
+     "minor": 1,
+     "waived": 0,
+     "categories": {
+      "WIDTH_EXPAND": 1
+     }
+    }
+   ],
+   "op": "operator"
+  }
+ ],
+ "usage": [
+  {
+   "prompt_tokens": 2344,
+   "completion_tokens": 16209,
+   "total_tokens": 18553,
+   "prompt_tokens_details": {
+    "cached_tokens": 1408
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15724
+   },
+   "prompt_cache_hit_tokens": 1408,
+   "prompt_cache_miss_tokens": 936
+  },
+  {
+   "prompt_tokens": 2304,
+   "completion_tokens": 19280,
+   "total_tokens": 21584,
+   "prompt_tokens_details": {
+    "cached_tokens": 1408
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 18806
+   },
+   "prompt_cache_hit_tokens": 1408,
+   "prompt_cache_miss_tokens": 896
+  },
+  {
+   "prompt_tokens": 1818,
+   "completion_tokens": 10506,
+   "total_tokens": 12324,
+   "prompt_tokens_details": {
+    "cached_tokens": 1152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9859
+   },
+   "prompt_cache_hit_tokens": 1152,
+   "prompt_cache_miss_tokens": 666
+  },
+  {
+   "prompt_tokens": 1680,
+   "completion_tokens": 24017,
+   "total_tokens": 25697,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 23661
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 784
+  },
+  {
+   "prompt_tokens": 1786,
+   "completion_tokens": 15578,
+   "total_tokens": 17364,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15121
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 890
+  },
+  {
+   "prompt_tokens": 1620,
+   "completion_tokens": 12002,
+   "total_tokens": 13622,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 11684
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 724
+  },
+  {
+   "prompt_tokens": 1923,
+   "completion_tokens": 21703,
+   "total_tokens": 23626,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 21340
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 1027
+  },
+  {
+   "prompt_tokens": 1602,
+   "completion_tokens": 10774,
+   "total_tokens": 12376,
+   "prompt_tokens_details": {
+    "cached_tokens": 1024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 10425
+   },
+   "prompt_cache_hit_tokens": 1024,
+   "prompt_cache_miss_tokens": 578
+  },
+  {
+   "prompt_tokens": 1810,
+   "completion_tokens": 10052,
+   "total_tokens": 11862,
+   "prompt_tokens_details": {
+    "cached_tokens": 1024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9703
+   },
+   "prompt_cache_hit_tokens": 1024,
+   "prompt_cache_miss_tokens": 786
+  },
+  {
+   "prompt_tokens": 2118,
+   "completion_tokens": 8874,
+   "total_tokens": 10992,
+   "prompt_tokens_details": {
+    "cached_tokens": 1024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8526
+   },
+   "prompt_cache_hit_tokens": 1024,
+   "prompt_cache_miss_tokens": 1094
+  },
+  {
+   "prompt_tokens": 1498,
+   "completion_tokens": 31269,
+   "total_tokens": 32767,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 30913
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 858
+  },
+  {
+   "prompt_tokens": 1719,
+   "completion_tokens": 17928,
+   "total_tokens": 19647,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 17585
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 1079
+  },
+  {
+   "prompt_tokens": 1807,
+   "completion_tokens": 13415,
+   "total_tokens": 15222,
+   "prompt_tokens_details": {
+    "cached_tokens": 1024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 13082
+   },
+   "prompt_cache_hit_tokens": 1024,
+   "prompt_cache_miss_tokens": 783
+  },
+  {
+   "prompt_tokens": 1468,
+   "completion_tokens": 10352,
+   "total_tokens": 11820,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 10006
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 828
+  },
+  {
+   "prompt_tokens": 1157,
+   "completion_tokens": 15338,
+   "total_tokens": 16495,
+   "prompt_tokens_details": {
+    "cached_tokens": 768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15092
+   },
+   "prompt_cache_hit_tokens": 768,
+   "prompt_cache_miss_tokens": 389
+  },
+  {
+   "prompt_tokens": 1546,
+   "completion_tokens": 10778,
+   "total_tokens": 12324,
+   "prompt_tokens_details": {
+    "cached_tokens": 768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 10569
+   },
+   "prompt_cache_hit_tokens": 768,
+   "prompt_cache_miss_tokens": 778
+  },
+  {
+   "prompt_tokens": 1539,
+   "completion_tokens": 8565,
+   "total_tokens": 10104,
+   "prompt_tokens_details": {
+    "cached_tokens": 768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8309
+   },
+   "prompt_cache_hit_tokens": 768,
+   "prompt_cache_miss_tokens": 771
+  },
+  {
+   "prompt_tokens": 2264,
+   "completion_tokens": 13968,
+   "total_tokens": 16232,
+   "prompt_tokens_details": {
+    "cached_tokens": 768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 13617
+   },
+   "prompt_cache_hit_tokens": 768,
+   "prompt_cache_miss_tokens": 1496
+  },
+  {
+   "prompt_tokens": 2004,
+   "completion_tokens": 28613,
+   "total_tokens": 30617,
+   "prompt_tokens_details": {
+    "cached_tokens": 768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 28183
+   },
+   "prompt_cache_hit_tokens": 768,
+   "prompt_cache_miss_tokens": 1236
+  },
+  {
+   "prompt_tokens": 1936,
+   "completion_tokens": 20976,
+   "total_tokens": 22912,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 20665
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 1040
+  },
+  {
+   "prompt_tokens": 2316,
+   "completion_tokens": 23828,
+   "total_tokens": 26144,
+   "prompt_tokens_details": {
+    "cached_tokens": 1152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 23106
+   },
+   "prompt_cache_hit_tokens": 1152,
+   "prompt_cache_miss_tokens": 1164
+  },
+  {
+   "prompt_tokens": 2984,
+   "completion_tokens": 15676,
+   "total_tokens": 18660,
+   "prompt_tokens_details": {
+    "cached_tokens": 1152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 14810
+   },
+   "prompt_cache_hit_tokens": 1152,
+   "prompt_cache_miss_tokens": 1832
+  },
+  {
+   "prompt_tokens": 2757,
+   "completion_tokens": 10185,
+   "total_tokens": 12942,
+   "prompt_tokens_details": {
+    "cached_tokens": 1280
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9359
+   },
+   "prompt_cache_hit_tokens": 1280,
+   "prompt_cache_miss_tokens": 1477
+  },
+  {
+   "prompt_tokens": 1803,
+   "completion_tokens": 10833,
+   "total_tokens": 12636,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 10410
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 1163
+  },
+  {
+   "prompt_tokens": 1761,
+   "completion_tokens": 19307,
+   "total_tokens": 21068,
+   "prompt_tokens_details": {
+    "cached_tokens": 1024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 18906
+   },
+   "prompt_cache_hit_tokens": 1024,
+   "prompt_cache_miss_tokens": 737
+  },
+  {
+   "prompt_tokens": 1852,
+   "completion_tokens": 16555,
+   "total_tokens": 18407,
+   "prompt_tokens_details": {
+    "cached_tokens": 1152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 16056
+   },
+   "prompt_cache_hit_tokens": 1152,
+   "prompt_cache_miss_tokens": 700
+  },
+  {
+   "prompt_tokens": 1973,
+   "completion_tokens": 23197,
+   "total_tokens": 25170,
+   "prompt_tokens_details": {
+    "cached_tokens": 768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 22680
+   },
+   "prompt_cache_hit_tokens": 768,
+   "prompt_cache_miss_tokens": 1205
+  },
+  {
+   "prompt_tokens": 1973,
+   "completion_tokens": 30231,
+   "total_tokens": 32204,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 29646
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 1077
+  },
+  {
+   "prompt_tokens": 2682,
+   "completion_tokens": 15984,
+   "total_tokens": 18666,
+   "prompt_tokens_details": {
+    "cached_tokens": 768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15453
+   },
+   "prompt_cache_hit_tokens": 768,
+   "prompt_cache_miss_tokens": 1914
+  },
+  {
+   "prompt_tokens": 1565,
+   "completion_tokens": 10059,
+   "total_tokens": 11624,
+   "prompt_tokens_details": {
+    "cached_tokens": 640
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9524
+   },
+   "prompt_cache_hit_tokens": 640,
+   "prompt_cache_miss_tokens": 925
+  },
+  {
+   "prompt_tokens": 2403,
+   "completion_tokens": 18472,
+   "total_tokens": 20875,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 18040
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 1507
+  },
+  {
+   "prompt_tokens": 2855,
+   "completion_tokens": 29670,
+   "total_tokens": 32525,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 29057
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 1959
+  },
+  {
+   "prompt_tokens": 2542,
+   "completion_tokens": 28077,
+   "total_tokens": 30619,
+   "prompt_tokens_details": {
+    "cached_tokens": 896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 27580
+   },
+   "prompt_cache_hit_tokens": 896,
+   "prompt_cache_miss_tokens": 1646
+  }
+ ]
+}

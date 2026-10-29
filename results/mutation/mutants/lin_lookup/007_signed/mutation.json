@@ -1,0 +1,8 @@
+{
+ "op": "signed",
+ "expect": "SIGN",
+ "desc": "去掉一个 signed",
+ "line": 18,
+ "before": "i_lin <= $signed(lut[idx]);",
+ "after": "i_lin <= (lut[idx]);"
+}

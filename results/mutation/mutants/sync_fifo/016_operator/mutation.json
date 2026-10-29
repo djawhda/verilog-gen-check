@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 36,
+ "before": "wp <= wp + 1'b1;",
+ "after": "wp <= wp - 1'b1;"
+}

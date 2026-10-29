@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 24,
+ "before": "assign p = pp0 + pp1x4;",
+ "after": "assign p = pp0 - pp1x4;"
+}

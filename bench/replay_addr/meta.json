@@ -1,0 +1,12 @@
+{
+ "group": "TaOx 回放",
+ "difficulty": "中",
+ "focus": "分频计数、换槽位重启、同步脉冲",
+ "top": "replay_addr",
+ "ref": "replay_addr.v",
+ "tb": "tb.sv",
+ "spec": "spec.md",
+ "extra_files": [],
+ "forbid": [],
+ "ref_source": "本题库编写"
+}

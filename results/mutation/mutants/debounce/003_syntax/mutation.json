@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 30,
+ "before": "cnt  <= {CW{1'b0}};",
+ "after": "cnt  <= {CW{1'b0}}"
+}

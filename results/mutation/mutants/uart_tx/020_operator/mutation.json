@@ -1,0 +1,8 @@
+{
+ "op": "operator",
+ "expect": "FUNC",
+ "desc": "+/- 写反",
+ "line": 38,
+ "before": "bitn <= bitn + 4'd1;",
+ "after": "bitn <= bitn - 4'd1;"
+}

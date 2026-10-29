@@ -1,0 +1,8 @@
+{
+ "op": "typo",
+ "expect": "ELAB",
+ "desc": "把一个信号名写错",
+ "line": 45,
+ "before": "addr     <= {slot, 12'd0};",
+ "after": "addr     <= {slot_r, 12'd0};"
+}

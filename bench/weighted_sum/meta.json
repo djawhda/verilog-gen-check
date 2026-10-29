@@ -1,0 +1,12 @@
+{
+ "group": "Booth 乘法器",
+ "difficulty": "难",
+ "focus": "定点舍入、流水线延迟",
+ "ref_source": "队友 Booth FPGA 工程",
+ "top": "weighted_sum",
+ "ref": "weighted_sum.v",
+ "tb": "tb.sv",
+ "spec": "spec.md",
+ "extra_files": [],
+ "forbid": []
+}

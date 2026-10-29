@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 31,
+ "before": "3'd5: div_last = L5;",
+ "after": "3'd5: div_last = L5"
+}

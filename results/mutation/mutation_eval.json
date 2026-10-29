@@ -1,0 +1,7054 @@
+{
+ "meta": {
+  "time": "2026-10-27 07:10:41",
+  "tasks": 10,
+  "per_op": 4,
+  "seed": 1,
+  "seconds": 120.2,
+  "tools": {
+   "iverilog": true,
+   "verilator": true,
+   "yosys": true
+  }
+ },
+ "table": [
+  {
+   "op": "syntax",
+   "desc": "删掉一个分号",
+   "n": 29,
+   "static_major": 29,
+   "static_any": 29,
+   "expected_hit": 29,
+   "sim_ran": 0,
+   "sim_fail": 0,
+   "detected": 29,
+   "detected_any": 29,
+   "static_only": 29,
+   "sim_only": 0,
+   "missed": 0,
+   "initial_fail": 29,
+   "autofix_pass": 29,
+   "tool_iverilog": 29,
+   "tool_verilator": 0,
+   "tool_slang": 29,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 0,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "typo",
+   "desc": "把一个信号名写错",
+   "n": 29,
+   "static_major": 29,
+   "static_any": 29,
+   "expected_hit": 29,
+   "sim_ran": 0,
+   "sim_fail": 0,
+   "detected": 29,
+   "detected_any": 29,
+   "static_only": 29,
+   "sim_only": 0,
+   "missed": 0,
+   "initial_fail": 29,
+   "autofix_pass": 29,
+   "tool_iverilog": 29,
+   "tool_verilator": 0,
+   "tool_slang": 0,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 0,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "blocking",
+   "desc": "时序块里 <= 改成 =",
+   "n": 29,
+   "static_major": 29,
+   "static_any": 29,
+   "expected_hit": 29,
+   "sim_ran": 29,
+   "sim_fail": 3,
+   "detected": 29,
+   "detected_any": 29,
+   "static_only": 26,
+   "sim_only": 0,
+   "missed": 0,
+   "initial_fail": 29,
+   "autofix_pass": 29,
+   "tool_iverilog": 0,
+   "tool_verilator": 29,
+   "tool_slang": 0,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 0,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "nonblocking",
+   "desc": "组合块里 = 改成 <=",
+   "n": 8,
+   "static_major": 8,
+   "static_any": 8,
+   "expected_hit": 8,
+   "sim_ran": 8,
+   "sim_fail": 4,
+   "detected": 8,
+   "detected_any": 8,
+   "static_only": 4,
+   "sim_only": 0,
+   "missed": 0,
+   "initial_fail": 8,
+   "autofix_pass": 8,
+   "tool_iverilog": 0,
+   "tool_verilator": 8,
+   "tool_slang": 0,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 0,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "latch",
+   "desc": "删掉组合 case 的 default 分支",
+   "n": 3,
+   "static_major": 2,
+   "static_any": 3,
+   "expected_hit": 2,
+   "sim_ran": 3,
+   "sim_fail": 2,
+   "detected": 3,
+   "detected_any": 3,
+   "static_only": 1,
+   "sim_only": 1,
+   "missed": 0,
+   "initial_fail": 3,
+   "autofix_pass": 0,
+   "tool_iverilog": 0,
+   "tool_verilator": 3,
+   "tool_slang": 0,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 2,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "width",
+   "desc": "内部信号位宽少 1 位",
+   "n": 27,
+   "static_major": 24,
+   "static_any": 27,
+   "expected_hit": 24,
+   "sim_ran": 27,
+   "sim_fail": 12,
+   "detected": 27,
+   "detected_any": 27,
+   "static_only": 15,
+   "sim_only": 3,
+   "missed": 0,
+   "initial_fail": 27,
+   "autofix_pass": 0,
+   "tool_iverilog": 2,
+   "tool_verilator": 27,
+   "tool_slang": 7,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 3,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "signed",
+   "desc": "去掉一个 signed",
+   "n": 16,
+   "static_major": 2,
+   "static_any": 10,
+   "expected_hit": 1,
+   "sim_ran": 16,
+   "sim_fail": 0,
+   "detected": 2,
+   "detected_any": 10,
+   "static_only": 2,
+   "sim_only": 0,
+   "missed": 6,
+   "initial_fail": 2,
+   "autofix_pass": 0,
+   "tool_iverilog": 0,
+   "tool_verilator": 0,
+   "tool_slang": 10,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 0,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "multidrive",
+   "desc": "同一信号多加一个驱动",
+   "n": 39,
+   "static_major": 39,
+   "static_any": 39,
+   "expected_hit": 39,
+   "sim_ran": 39,
+   "sim_fail": 38,
+   "detected": 39,
+   "detected_any": 39,
+   "static_only": 1,
+   "sim_only": 0,
+   "missed": 0,
+   "initial_fail": 39,
+   "autofix_pass": 0,
+   "tool_iverilog": 0,
+   "tool_verilator": 0,
+   "tool_slang": 0,
+   "tool_vcheck-rules": 39,
+   "tool_yosys": 21,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "offbyone",
+   "desc": "比较边界差 1",
+   "n": 9,
+   "static_major": 0,
+   "static_any": 0,
+   "expected_hit": 0,
+   "sim_ran": 9,
+   "sim_fail": 9,
+   "detected": 9,
+   "detected_any": 9,
+   "static_only": 0,
+   "sim_only": 9,
+   "missed": 0,
+   "initial_fail": 9,
+   "autofix_pass": 0,
+   "tool_iverilog": 0,
+   "tool_verilator": 0,
+   "tool_slang": 0,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 0,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "operator",
+   "desc": "+/- 写反",
+   "n": 14,
+   "static_major": 0,
+   "static_any": 0,
+   "expected_hit": 0,
+   "sim_ran": 14,
+   "sim_fail": 14,
+   "detected": 14,
+   "detected_any": 14,
+   "static_only": 0,
+   "sim_only": 14,
+   "missed": 0,
+   "initial_fail": 14,
+   "autofix_pass": 0,
+   "tool_iverilog": 0,
+   "tool_verilator": 0,
+   "tool_slang": 0,
+   "tool_vcheck-rules": 0,
+   "tool_yosys": 0,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "reset",
+   "desc": "漏掉一个复位赋值",
+   "n": 26,
+   "static_major": 1,
+   "static_any": 26,
+   "expected_hit": 0,
+   "sim_ran": 26,
+   "sim_fail": 17,
+   "detected": 17,
+   "detected_any": 26,
+   "static_only": 0,
+   "sim_only": 16,
+   "missed": 0,
+   "initial_fail": 17,
+   "autofix_pass": 0,
+   "tool_iverilog": 0,
+   "tool_verilator": 1,
+   "tool_slang": 0,
+   "tool_vcheck-rules": 25,
+   "tool_yosys": 0,
+   "tool_spec-rule": 0
+  },
+  {
+   "op": "合计",
+   "desc": "全部",
+   "n": 229,
+   "static_major": 163,
+   "static_any": 200,
+   "expected_hit": 161,
+   "sim_ran": 171,
+   "sim_fail": 99,
+   "detected": 206,
+   "detected_any": 223,
+   "static_only": 107,
+   "sim_only": 43,
+   "missed": 6,
+   "initial_fail": 206,
+   "autofix_pass": 95,
+   "tool_iverilog": 60,
+   "tool_verilator": 68,
+   "tool_slang": 46,
+   "tool_vcheck-rules": 64,
+   "tool_yosys": 26,
+   "tool_spec-rule": 0
+  }
+ ],
+ "rows": [
+  {
+   "task": "booth_encoder",
+   "mutant": "000_nonblocking",
+   "op": "nonblocking",
+   "expect": "COMBDLY",
+   "line": 41,
+   "before": "5'b10000: begin digit=-2; address=4; end",
+   "after": "5'b10000: begin digit<=-2; address=4; end",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "COMBDLY"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [
+    "第 41 行 '<=' 改成 '='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "001_nonblocking",
+   "op": "nonblocking",
+   "expect": "COMBDLY",
+   "line": 42,
+   "before": "default: begin digit=0; address=0; end",
+   "after": "default: begin digit<=0; address=0; end",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "COMBDLY"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [
+    "第 42 行 '<=' 改成 '='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "002_nonblocking",
+   "op": "nonblocking",
+   "expect": "COMBDLY",
+   "line": 42,
+   "before": "default: begin digit=0; address=0; end",
+   "after": "default: begin digit=0; address<=0; end",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "COMBDLY"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [
+    "第 42 行 '<=' 改成 '='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "003_nonblocking",
+   "op": "nonblocking",
+   "expect": "COMBDLY",
+   "line": 41,
+   "before": "5'b10000: begin digit=-2; address=4; end",
+   "after": "5'b10000: begin digit=-2; address<=4; end",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "COMBDLY"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [
+    "第 41 行 '<=' 改成 '='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "004_latch",
+   "op": "latch",
+   "expect": "LATCH",
+   "line": 42,
+   "before": "default: begin digit=0; address=0; end",
+   "after": "",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "yosys"
+   ],
+   "tools_any": [
+    "verilator",
+    "yosys"
+   ],
+   "categories": [
+    "CASE",
+    "LATCH"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "005_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 32,
+   "before": "wire [4:0] decisions;",
+   "after": "wire [3:0] decisions;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "iverilog",
+    "verilator",
+    "yosys"
+   ],
+   "categories": [
+    "PORT",
+    "WIDTH_EXPAND"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "006_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 31,
+   "before": "wire [2:0] inverted;",
+   "after": "wire [1:0] inverted;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "iverilog",
+    "verilator",
+    "yosys"
+   ],
+   "categories": [
+    "PORT",
+    "WIDTH_EXPAND"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "007_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 30,
+   "before": "output reg signed [2:0] digit, output reg [2:0] address);",
+   "after": "output reg [2:0] digit, output reg [2:0] address);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "slang"
+   ],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.28,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "008_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign p2 = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "009_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign complementary_gates = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "010_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign p1 = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_encoder",
+   "mutant": "011_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign gates = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "000_latch",
+   "op": "latch",
+   "expect": "LATCH",
+   "line": 17,
+   "before": "default:        pp = 8'sd0;",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "CASE"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "001_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 21,
+   "before": "wire signed [7:0] pp0 = pp({q[1], q[0], 1'b0}, m8, m2);",
+   "after": "wire signed [6:0] pp0 = pp({q[1], q[0], 1'b0}, m8, m2);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "slang",
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "002_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 22,
+   "before": "wire signed [7:0] pp1 = pp({q[3], q[2], q[1]}, m8, m2);",
+   "after": "wire signed [6:0] pp1 = pp({q[3], q[2], q[1]}, m8, m2);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "003_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 23,
+   "before": "wire signed [7:0] pp1x4 = pp1 <<< 2;                // 4·pp1",
+   "after": "wire signed [6:0] pp1x4 = pp1 <<< 2;                // 4·pp1",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "slang",
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "004_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 8,
+   "before": "wire signed [7:0] m8  = $signed({{4{m[3]}}, m});   // 符号扩展到 8 位",
+   "after": "wire signed [6:0] m8  = $signed({{4{m[3]}}, m});   // 符号扩展到 8 位",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "005_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 6,
+   "before": "output wire signed [7:0] p",
+   "after": "output wire [7:0] p",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN_CONV"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.23,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "006_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 8,
+   "before": "wire signed [7:0] m8  = $signed({{4{m[3]}}, m});   // 符号扩展到 8 位",
+   "after": "wire signed [7:0] m8  = ({{4{m[3]}}, m});   // 符号扩展到 8 位",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN_CONV"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "007_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 5,
+   "before": "input  wire signed [3:0] q,",
+   "after": "input  wire [3:0] q,",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": false,
+   "initial_pass": true,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "008_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 9,
+   "before": "wire signed [7:0] m2  = m8 <<< 1;                  // 2m",
+   "after": "wire [7:0] m2  = m8 <<< 1;                  // 2m",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN_CONV"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "009_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign m2 = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN",
+    "OTHER"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "010_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign m8 = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN",
+    "OTHER"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.18,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "011_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign pp1x4 = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "012_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign pp0 = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "booth_mul4",
+   "mutant": "013_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 24,
+   "before": "assign p = pp0 + pp1x4;",
+   "after": "assign p = pp0 - pp1x4;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "000_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 27,
+   "before": "out_valid <= 1'b0;",
+   "after": "out_valid <= 1'b0",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.21,
+   "autofix_steps": [
+    "在第 27 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "001_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 29,
+   "before": "out_valid <= in_valid;",
+   "after": "out_valid <= in_valid",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [
+    "在第 29 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "002_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 32,
+   "before": "sat  <= lo | hi;",
+   "after": "sat  <= lo | hi",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 32 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "003_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 25,
+   "before": "code      <= 10'd512;",
+   "after": "code      <= 10'd512",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.18,
+   "autofix_steps": [
+    "在第 25 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "004_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 29,
+   "before": "out_valid <= in_valid;",
+   "after": "out_valid <= in_valid_r;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "把未声明的 in_valid_r 改成已声明的 in_valid"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "005_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 31,
+   "before": "code <= lo ? 10'd0 : (hi ? 10'd1023 : y[9:0]);",
+   "after": "code <= lo_r ? 10'd0 : (hi ? 10'd1023 : y[9:0]);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [
+    "把未声明的 lo_r 改成已声明的 lo"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "006_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 31,
+   "before": "code <= lo ? 10'd0 : (hi ? 10'd1023 : y[9:0]);",
+   "after": "code <= lo ? 10'd0 : (hi_r ? 10'd1023 : y[9:0]);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [
+    "把未声明的 hi_r 改成已声明的 hi"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "007_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 32,
+   "before": "sat  <= lo | hi;",
+   "after": "sat  <= lo_r | hi;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.16,
+   "autofix_steps": [
+    "把未声明的 lo_r 改成已声明的 lo"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "008_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 27,
+   "before": "out_valid <= 1'b0;",
+   "after": "out_valid = 1'b0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.6,
+   "autofix_steps": [
+    "第 27 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "009_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 32,
+   "before": "sat  <= lo | hi;",
+   "after": "sat  = lo | hi;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.61,
+   "autofix_steps": [
+    "第 32 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "010_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 31,
+   "before": "code <= lo ? 10'd0 : (hi ? 10'd1023 : y[9:0]);",
+   "after": "code = lo ? 10'd0 : (hi ? 10'd1023 : y[9:0]);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.5,
+   "autofix_steps": [
+    "第 31 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "011_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 29,
+   "before": "out_valid <= in_valid;",
+   "after": "out_valid = in_valid;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.58,
+   "autofix_steps": [
+    "第 29 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "dac_map",
+   "mutant": "012_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 17,
+   "before": "wire signed [47:0] g48 = $signed({{16{G[31]}}, G});",
+   "after": "wire signed [46:0] g48 = $signed({{16{G[31]}}, G});",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "slang",
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.4,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "013_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 16,
+   "before": "wire signed [47:0] x48 = $signed({{32{x[15]}}, x});   // 显式符号扩展",
+   "after": "wire signed [46:0] x48 = $signed({{32{x[15]}}, x});   // 显式符号扩展",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "slang",
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.34,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "014_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 18,
+   "before": "wire signed [47:0] acc = x48 * g48 + O;",
+   "after": "wire signed [46:0] acc = x48 * g48 + O;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.44,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "015_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 19,
+   "before": "wire signed [47:0] y   = acc >>> S;",
+   "after": "wire signed [46:0] y   = acc >>> S;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.58,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "016_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 11,
+   "before": "input  wire signed [15:0] x,",
+   "after": "input  wire [15:0] x,",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": false,
+   "initial_pass": true,
+   "check_seconds": 0.45,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "017_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 16,
+   "before": "wire signed [47:0] x48 = $signed({{32{x[15]}}, x});   // 显式符号扩展",
+   "after": "wire [47:0] x48 = $signed({{32{x[15]}}, x});   // 显式符号扩展",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "slang"
+   ],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN",
+    "SIGN_CONV"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.44,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "018_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 17,
+   "before": "wire signed [47:0] g48 = $signed({{16{G[31]}}, G});",
+   "after": "wire signed [47:0] g48 = ({{16{G[31]}}, G});",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": false,
+   "initial_pass": true,
+   "check_seconds": 0.42,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "019_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 4,
+   "before": "parameter signed [31:0] G = 32'sd26817,",
+   "after": "parameter [31:0] G = 32'sd26817,",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": false,
+   "initial_pass": true,
+   "check_seconds": 0.42,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "020_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign g48 = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.31,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "021_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) code <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.62,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "022_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign acc = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.7,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "023_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign y = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.43,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "024_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 20,
+   "before": "wire               lo  = y < 48'sd0;",
+   "after": "wire               lo  = y <= 48'sd0;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.64,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "025_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 20,
+   "before": "wire               lo  = y < 48'sd0;",
+   "after": "wire               lo  = y < 48'sd1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.62,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "026_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 21,
+   "before": "wire               hi  = y > 48'sd1023;",
+   "after": "wire               hi  = y > 48'sd1024;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.55,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "027_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 21,
+   "before": "wire               hi  = y > 48'sd1023;",
+   "after": "wire               hi  = y >= 48'sd1023;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.56,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "028_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 18,
+   "before": "wire signed [47:0] acc = x48 * g48 + O;",
+   "after": "wire signed [47:0] acc = x48 * g48 - O;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.44,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "029_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 26,
+   "before": "sat       <= 1'b0;",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.43,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "030_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 25,
+   "before": "code      <= 10'd512;",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.52,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "dac_map",
+   "mutant": "031_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 27,
+   "before": "out_valid <= 1'b0;",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.52,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "000_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 29,
+   "before": "dout <= s2;",
+   "after": "dout <= s2",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [
+    "在第 29 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "001_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 31,
+   "before": "rise <= s2;",
+   "after": "rise <= s2",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.17,
+   "autofix_steps": [
+    "在第 31 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "002_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 34,
+   "before": "cnt <= cnt + 1'b1;",
+   "after": "cnt <= cnt + 1'b1",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 34 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "003_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 30,
+   "before": "cnt  <= {CW{1'b0}};",
+   "after": "cnt  <= {CW{1'b0}}",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.17,
+   "autofix_steps": [
+    "在第 30 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "004_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 27,
+   "before": "cnt <= {CW{1'b0}};",
+   "after": "cnt <= {CW_r{1'b0}};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.17,
+   "autofix_steps": [
+    "把未声明的 CW_r 改成已声明的 CW"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "005_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 30,
+   "before": "cnt  <= {CW{1'b0}};",
+   "after": "cnt  <= {CW_r{1'b0}};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.21,
+   "autofix_steps": [
+    "把未声明的 CW_r 改成已声明的 CW"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "006_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 23,
+   "before": "s2 <= s1;",
+   "after": "s2 <= s1_r;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.18,
+   "autofix_steps": [
+    "把未声明的 s1_r 改成已声明的 s1"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "007_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 31,
+   "before": "rise <= s2;",
+   "after": "rise <= s2_r;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [
+    "把未声明的 s2_r 改成已声明的 s2"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "008_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 20,
+   "before": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+   "after": "s1 <= 1'b0; s2 <= 1'b0; dout = 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [
+    "第 20 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "009_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 31,
+   "before": "rise <= s2;",
+   "after": "rise = s2;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [
+    "第 31 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "010_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 27,
+   "before": "cnt <= {CW{1'b0}};",
+   "after": "cnt = {CW{1'b0}};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.28,
+   "autofix_steps": [
+    "第 27 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "011_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 24,
+   "before": "rise <= 1'b0;",
+   "after": "rise = 1'b0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [
+    "第 24 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "debounce",
+   "mutant": "012_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) rise <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "013_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) dout <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "014_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) fall <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "015_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) s2 <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "016_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 34,
+   "before": "cnt <= cnt + 1'b1;",
+   "after": "cnt <= cnt - 1'b1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.33,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "017_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 20,
+   "before": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+   "after": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "018_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 20,
+   "before": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+   "after": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0;  rise <= 1'b0; fall <= 1'b0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.22,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "019_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 20,
+   "before": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+   "after": "s2 <= 1'b0; dout <= 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "debounce",
+   "mutant": "020_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 20,
+   "before": "s1 <= 1'b0; s2 <= 1'b0; dout <= 1'b0; cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+   "after": "s1 <= 1'b0; s2 <= 1'b0;  cnt <= {CW{1'b0}}; rise <= 1'b0; fall <= 1'b0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "000_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 18,
+   "before": "i_lin <= $signed(lut[idx]);",
+   "after": "i_lin <= $signed(lut[idx])",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 18 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "001_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 18,
+   "before": "i_lin <= $signed(lut[idx]);",
+   "after": "i_lin <= $signed(lut[idx_r]);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "把未声明的 idx_r 改成已声明的 idx"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "002_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 18,
+   "before": "i_lin <= $signed(lut[idx]);",
+   "after": "i_lin <= $signed(lut_r[idx]);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "把未声明的 lut_r 改成已声明的 lut"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "003_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 18,
+   "before": "i_lin <= $signed(lut[idx]);",
+   "after": "i_lin = $signed(lut[idx]);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [
+    "第 18 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "004_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 14,
+   "before": "wire [16:0] offset = {c[15], c} + 17'd32768;",
+   "after": "wire [15:0] offset = {c[15], c} + 17'd32768;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.28,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "005_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 10,
+   "before": "reg [15:0] lut [0:4095];",
+   "after": "reg [14:0] lut [0:4095];",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "verilator",
+    "yosys"
+   ],
+   "categories": [
+    "OTHER",
+    "WIDTH_EXPAND"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.34,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "006_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 15,
+   "before": "wire [11:0] idx    = offset[15:4];",
+   "after": "wire [10:0] idx    = offset[15:4];",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.34,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "007_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 18,
+   "before": "i_lin <= $signed(lut[idx]);",
+   "after": "i_lin <= (lut[idx]);",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN_CONV"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "008_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 7,
+   "before": "input  wire signed [15:0] c,",
+   "after": "input  wire [15:0] c,",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": false,
+   "initial_pass": true,
+   "check_seconds": 0.28,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "009_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 8,
+   "before": "output reg  signed [15:0] i_lin",
+   "after": "output reg  [15:0] i_lin",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN_CONV"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.28,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "010_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign offset = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.28,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "011_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) i_lin <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "lin_lookup",
+   "mutant": "012_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign idx = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "000_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 25,
+   "before": "cnt          <= cnt_next;",
+   "after": "cnt          <= cnt_next",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [
+    "在第 25 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "001_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 26,
+   "before": "duty_l       <= duty_next;",
+   "after": "duty_l       <= duty_next",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.16,
+   "autofix_steps": [
+    "在第 26 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "002_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 28,
+   "before": "pwm_out      <= (cnt_next < {9'd0, duty_next});",
+   "after": "pwm_out      <= (cnt_next < {9'd0, duty_next})",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.16,
+   "autofix_steps": [
+    "在第 28 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "003_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 22,
+   "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "after": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 22 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "004_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 25,
+   "before": "cnt          <= cnt_next;",
+   "after": "cnt          <= cnt_next_r;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.14,
+   "autofix_steps": [
+    "把未声明的 cnt_next_r 改成已声明的 cnt_next"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "005_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 27,
+   "before": "period_start <= (cnt_next == 17'd0);",
+   "after": "period_start <= (cnt_next_r == 17'd0);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.16,
+   "autofix_steps": [
+    "把未声明的 cnt_next_r 改成已声明的 cnt_next"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "006_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 26,
+   "before": "duty_l       <= duty_next;",
+   "after": "duty_l       <= duty_next_r;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.17,
+   "autofix_steps": [
+    "把未声明的 duty_next_r 改成已声明的 duty_next"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "007_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 28,
+   "before": "pwm_out      <= (cnt_next < {9'd0, duty_next});",
+   "after": "pwm_out      <= (cnt_next < {9'd0, duty_next_r});",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.18,
+   "autofix_steps": [
+    "把未声明的 duty_next_r 改成已声明的 duty_next"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "008_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 22,
+   "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "after": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start = 1'b0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [
+    "第 22 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "009_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 27,
+   "before": "period_start <= (cnt_next == 17'd0);",
+   "after": "period_start = (cnt_next == 17'd0);",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [
+    "第 27 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "010_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 22,
+   "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "after": "started <= 1'b0; cnt <= 17'd0; duty_l = 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [
+    "第 22 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "011_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 25,
+   "before": "cnt          <= cnt_next;",
+   "after": "cnt          = cnt_next;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [
+    "第 25 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "pwm",
+   "mutant": "012_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 15,
+   "before": "reg [7:0]  duty_l;",
+   "after": "reg [6:0]  duty_l;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "013_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 14,
+   "before": "reg [16:0] cnt;",
+   "after": "reg [15:0] cnt;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.36,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "014_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 18,
+   "before": "wire [7:0]  duty_next = (cnt_next == 17'd0) ? duty : duty_l;",
+   "after": "wire [6:0]  duty_next = (cnt_next == 17'd0) ? duty : duty_l;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "015_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 17,
+   "before": "wire [16:0] cnt_next  = (!started || cnt == LAST) ? 17'd0 : cnt + 17'd1;",
+   "after": "wire [15:0] cnt_next  = (!started || cnt == LAST) ? 17'd0 : cnt + 17'd1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "016_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign duty_next = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "017_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) period_start <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "018_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) cnt <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "019_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) pwm_out <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.31,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "020_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 27,
+   "before": "period_start <= (cnt_next == 17'd0);",
+   "after": "period_start <= (cnt_next == 17'd1);",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "021_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 18,
+   "before": "wire [7:0]  duty_next = (cnt_next == 17'd0) ? duty : duty_l;",
+   "after": "wire [7:0]  duty_next = (cnt_next == 17'd1) ? duty : duty_l;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.28,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "022_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 28,
+   "before": "pwm_out      <= (cnt_next < {9'd0, duty_next});",
+   "after": "pwm_out      <= (cnt_next <= {9'd0, duty_next});",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "023_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 17,
+   "before": "wire [16:0] cnt_next  = (!started || cnt == LAST) ? 17'd0 : cnt + 17'd1;",
+   "after": "wire [16:0] cnt_next  = (!started || cnt == LAST) ? 17'd0 : cnt - 17'd1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "024_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 22,
+   "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "after": "started <= 1'b0; cnt <= 17'd0;  pwm_out <= 1'b0; period_start <= 1'b0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.23,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "025_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 22,
+   "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "after": "cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "026_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 22,
+   "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "after": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "pwm",
+   "mutant": "027_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 22,
+   "before": "started <= 1'b0; cnt <= 17'd0; duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "after": "started <= 1'b0;  duty_l <= 8'd0; pwm_out <= 1'b0; period_start <= 1'b0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "000_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 55,
+   "before": "div_cnt <= div_cnt + 16'd1;",
+   "after": "div_cnt <= div_cnt + 16'd1",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [
+    "在第 55 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "001_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 31,
+   "before": "3'd5: div_last = L5;",
+   "after": "3'd5: div_last = L5",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 31 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "002_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 47,
+   "before": "sync     <= 1'b0;",
+   "after": "sync     <= 1'b0",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [
+    "在第 47 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "003_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 43,
+   "before": "div_cnt  <= 16'd0;",
+   "after": "div_cnt  <= 16'd0",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 43 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "004_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 45,
+   "before": "addr     <= {slot, 12'd0};",
+   "after": "addr     <= {slot_r, 12'd0};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.16,
+   "autofix_steps": [
+    "把未声明的 slot_r 改成已声明的 slot"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "005_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 55,
+   "before": "div_cnt <= div_cnt + 16'd1;",
+   "after": "div_cnt <= div_cnt_r + 16'd1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "把未声明的 div_cnt_r 改成已声明的 div_cnt"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "006_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 51,
+   "before": "addr    <= {cur_slot, idx_next};",
+   "after": "addr    <= {cur_slot_r, idx_next};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.14,
+   "autofix_steps": [
+    "把未声明的 cur_slot_r 改成已声明的 cur_slot"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "007_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 53,
+   "before": "sync    <= wrap;",
+   "after": "sync    <= wrap_r;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [
+    "把未声明的 wrap_r 改成已声明的 wrap"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "008_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 47,
+   "before": "sync     <= 1'b0;",
+   "after": "sync     = 1'b0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [
+    "第 47 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "009_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 50,
+   "before": "idx     <= idx_next;",
+   "after": "idx     = idx_next;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [
+    "第 50 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "010_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 44,
+   "before": "idx      <= 12'd0;",
+   "after": "idx      = 12'd0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [
+    "第 44 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "011_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 56,
+   "before": "tick    <= 1'b0;",
+   "after": "tick    = 1'b0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [
+    "第 56 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "012_nonblocking",
+   "op": "nonblocking",
+   "expect": "COMBDLY",
+   "line": 28,
+   "before": "3'd2: div_last = L2;",
+   "after": "3'd2: div_last <= L2;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "COMBDLY"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [
+    "第 28 行 '<=' 改成 '='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "013_nonblocking",
+   "op": "nonblocking",
+   "expect": "COMBDLY",
+   "line": 26,
+   "before": "3'd0: div_last = L0;",
+   "after": "3'd0: div_last <= L0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "COMBDLY"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [
+    "第 26 行 '<=' 改成 '='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "014_nonblocking",
+   "op": "nonblocking",
+   "expect": "COMBDLY",
+   "line": 30,
+   "before": "3'd4: div_last = L4;",
+   "after": "3'd4: div_last <= L4;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "COMBDLY"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [
+    "第 30 行 '<=' 改成 '='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "015_nonblocking",
+   "op": "nonblocking",
+   "expect": "COMBDLY",
+   "line": 29,
+   "before": "3'd3: div_last = L3;",
+   "after": "3'd3: div_last <= L3;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "COMBDLY"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [
+    "第 29 行 '<=' 改成 '='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "016_latch",
+   "op": "latch",
+   "expect": "LATCH",
+   "line": 33,
+   "before": "default: div_last = L7;",
+   "after": "",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "yosys"
+   ],
+   "tools_any": [
+    "verilator",
+    "yosys"
+   ],
+   "categories": [
+    "CASE",
+    "LATCH"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "017_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 21,
+   "before": "reg [11:0] idx;",
+   "after": "reg [10:0] idx;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "018_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 20,
+   "before": "reg [15:0] div_cnt;",
+   "after": "reg [14:0] div_cnt;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "019_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 38,
+   "before": "wire [11:0] idx_next = wrap ? 12'd0 : idx + 12'd1;",
+   "after": "wire [10:0] idx_next = wrap ? 12'd0 : idx + 12'd1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "020_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 19,
+   "before": "reg [2:0]  cur_slot;",
+   "after": "reg [1:0]  cur_slot;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "slang",
+    "verilator"
+   ],
+   "categories": [
+    "OTHER",
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.21,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "021_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) sync <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "022_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign wrap = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "023_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) tick <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.28,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "024_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) div_cnt <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "025_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 38,
+   "before": "wire [11:0] idx_next = wrap ? 12'd0 : idx + 12'd1;",
+   "after": "wire [11:0] idx_next = wrap ? 12'd0 : idx - 12'd1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "026_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 55,
+   "before": "div_cnt <= div_cnt + 16'd1;",
+   "after": "div_cnt <= div_cnt - 16'd1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.21,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "027_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 42,
+   "before": "cur_slot <= slot;",
+   "after": "",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "UNDRIVEN"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.3,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "028_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 43,
+   "before": "div_cnt  <= 16'd0;",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.3,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "029_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 47,
+   "before": "sync     <= 1'b0;",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "replay_addr",
+   "mutant": "030_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 45,
+   "before": "addr     <= {slot, 12'd0};",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "000_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 35,
+   "before": "mem[wp[DEPTH_LOG2-1:0]] <= din;",
+   "after": "mem[wp[DEPTH_LOG2-1:0]] <= din",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.14,
+   "autofix_steps": [
+    "在第 35 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "001_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 40,
+   "before": "rp <= rp + 1'b1;",
+   "after": "rp <= rp + 1'b1",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.21,
+   "autofix_steps": [
+    "在第 40 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "002_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 39,
+   "before": "dout <= mem[rp[DEPTH_LOG2-1:0]];",
+   "after": "dout <= mem[rp[DEPTH_LOG2-1:0]]",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.17,
+   "autofix_steps": [
+    "在第 39 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "003_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 32,
+   "before": "dout <= {W{1'b0}};",
+   "after": "dout <= {W{1'b0}}",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 32 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "004_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 32,
+   "before": "dout <= {W{1'b0}};",
+   "after": "dout <= {W_r{1'b0}};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.17,
+   "autofix_steps": [
+    "把未声明的 W_r 改成已声明的 W"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "005_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 39,
+   "before": "dout <= mem[rp[DEPTH_LOG2-1:0]];",
+   "after": "dout <= mem[rp_r[DEPTH_LOG2-1:0]];",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [
+    "把未声明的 rp_r 改成已声明的 rp"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "006_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 36,
+   "before": "wp <= wp + 1'b1;",
+   "after": "wp <= wp_r + 1'b1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "把未声明的 wp_r 改成已声明的 wp"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "007_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 30,
+   "before": "wp   <= {(DEPTH_LOG2+1){1'b0}};",
+   "after": "wp   <= {(DEPTH_LOG2_r+1){1'b0}};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "把未声明的 DEPTH_LOG2_r 改成已声明的 DEPTH_LOG2"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "008_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 36,
+   "before": "wp <= wp + 1'b1;",
+   "after": "wp = wp + 1'b1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [
+    "第 36 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "009_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 31,
+   "before": "rp   <= {(DEPTH_LOG2+1){1'b0}};",
+   "after": "rp   = {(DEPTH_LOG2+1){1'b0}};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [
+    "第 31 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "010_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 32,
+   "before": "dout <= {W{1'b0}};",
+   "after": "dout = {W{1'b0}};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [
+    "第 32 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "011_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 30,
+   "before": "wp   <= {(DEPTH_LOG2+1){1'b0}};",
+   "after": "wp   = {(DEPTH_LOG2+1){1'b0}};",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.31,
+   "autofix_steps": [
+    "第 30 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "012_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign full = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "013_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign do_wr = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "014_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) rp <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "015_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign count = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "016_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 36,
+   "before": "wp <= wp + 1'b1;",
+   "after": "wp <= wp - 1'b1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "017_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 40,
+   "before": "rp <= rp + 1'b1;",
+   "after": "rp <= rp - 1'b1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "018_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 21,
+   "before": "assign count = wp - rp;",
+   "after": "assign count = wp + rp;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "019_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 31,
+   "before": "rp   <= {(DEPTH_LOG2+1){1'b0}};",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.32,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "020_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 30,
+   "before": "wp   <= {(DEPTH_LOG2+1){1'b0}};",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "sync_fifo",
+   "mutant": "021_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 32,
+   "before": "dout <= {W{1'b0}};",
+   "after": "",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "000_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 35,
+   "before": "active <= 1'b1; bitn <= 4'd0; shreg <= data; tx <= 1'b0;",
+   "after": "active <= 1'b1; bitn <= 4'd0; shreg <= data; tx <= 1'b0",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [
+    "在第 35 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "001_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 39,
+   "before": "if (bitn == 4'd8) tx <= 1'b1;",
+   "after": "if (bitn == 4'd8) tx <= 1'b1",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.14,
+   "autofix_steps": [
+    "在第 39 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "002_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 43,
+   "before": "cnt <= cnt + 16'd1;",
+   "after": "cnt <= cnt + 16'd1",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.18,
+   "autofix_steps": [
+    "在第 43 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "003_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 38,
+   "before": "bitn <= bitn + 4'd1;",
+   "after": "bitn <= bitn + 4'd1",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.17,
+   "autofix_steps": [
+    "在第 38 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "004_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 40,
+   "before": "else begin tx <= shreg[0]; shreg <= {1'b0, shreg[7:1]}; end",
+   "after": "else begin tx <= shreg_r[0]; shreg <= {1'b0, shreg[7:1]}; end",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [
+    "把未声明的 shreg_r 改成已声明的 shreg"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "005_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 43,
+   "before": "cnt <= cnt + 16'd1;",
+   "after": "cnt <= cnt_r + 16'd1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.19,
+   "autofix_steps": [
+    "把未声明的 cnt_r 改成已声明的 cnt"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "006_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 38,
+   "before": "bitn <= bitn + 4'd1;",
+   "after": "bitn <= bitn_r + 4'd1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.16,
+   "autofix_steps": [
+    "把未声明的 bitn_r 改成已声明的 bitn"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "007_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 23,
+   "before": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "after": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0; tx = 1'b1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [
+    "第 23 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "008_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 43,
+   "before": "cnt <= cnt + 16'd1;",
+   "after": "cnt = cnt + 16'd1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.21,
+   "autofix_steps": [
+    "第 43 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "009_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 23,
+   "before": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "after": "active <= 1'b0; cnt <= 16'd0; bitn = 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [
+    "第 23 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "010_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 27,
+   "before": "active <= 1'b1; cnt <= 16'd0; bitn <= 4'd0; shreg <= data; tx <= 1'b0;",
+   "after": "active = 1'b1; cnt <= 16'd0; bitn <= 4'd0; shreg <= data; tx <= 1'b0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [
+    "第 27 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "011_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 16,
+   "before": "reg [3:0]  bitn;     // 0 = 起始位, 1..8 = 数据位, 9 = 停止位",
+   "after": "reg [2:0]  bitn;     // 0 = 起始位, 1..8 = 数据位, 9 = 停止位",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "012_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 15,
+   "before": "reg [15:0] cnt;",
+   "after": "reg [14:0] cnt;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "013_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 17,
+   "before": "reg [7:0]  shreg;",
+   "after": "reg [6:0]  shreg;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "slang",
+    "verilator"
+   ],
+   "tools_any": [
+    "slang",
+    "verilator"
+   ],
+   "categories": [
+    "ELAB",
+    "RANGE",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "014_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) cnt <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "015_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign busy = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "016_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) shreg <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "017_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) active <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.21,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "018_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 39,
+   "before": "if (bitn == 4'd8) tx <= 1'b1;",
+   "after": "if (bitn == 4'd9) tx <= 1'b1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "019_offbyone",
+   "op": "offbyone",
+   "expect": "FUNC",
+   "line": 31,
+   "before": "if (bitn == 4'd9) begin",
+   "after": "if (bitn == 4'd10) begin",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "020_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 38,
+   "before": "bitn <= bitn + 4'd1;",
+   "after": "bitn <= bitn - 4'd1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "021_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 43,
+   "before": "cnt <= cnt + 16'd1;",
+   "after": "cnt <= cnt - 16'd1;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.21,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "022_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 23,
+   "before": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "after": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "023_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 23,
+   "before": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "after": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0;  tx <= 1'b1;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.23,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "024_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 23,
+   "before": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "after": "active <= 1'b0;  bitn <= 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.21,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "uart_tx",
+   "mutant": "025_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 23,
+   "before": "active <= 1'b0; cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "after": "cnt <= 16'd0; bitn <= 4'd0; shreg <= 8'd0; tx <= 1'b1;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "000_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 25,
+   "before": "quotient<=rounded_magnitude/28'd20;",
+   "after": "quotient<=rounded_magnitude/28'd20",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 25 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "001_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 27,
+   "before": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient});",
+   "after": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient})",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.15,
+   "autofix_steps": [
+    "在第 27 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "002_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 28,
+   "before": "product_q20<=-inverting_sum_q20;",
+   "after": "product_q20<=-inverting_sum_q20",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.14,
+   "autofix_steps": [
+    "在第 28 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "003_syntax",
+   "op": "syntax",
+   "expect": "SYNTAX",
+   "line": 26,
+   "before": "negative_delayed<=negative;",
+   "after": "negative_delayed<=negative",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog",
+    "slang"
+   ],
+   "tools_any": [
+    "iverilog",
+    "slang"
+   ],
+   "categories": [
+    "SYNTAX"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.2,
+   "autofix_steps": [
+    "在第 26 行行尾补分号"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "004_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 23,
+   "before": "rounded_magnitude<=(numerator[27] ? -numerator : numerator)+28'd10;",
+   "after": "rounded_magnitude<=(numerator_r[27] ? -numerator : numerator)+28'd10;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.14,
+   "autofix_steps": [
+    "把未声明的 numerator_r 改成已声明的 numerator"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "005_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 24,
+   "before": "negative<=numerator[27];",
+   "after": "negative<=numerator_r[27];",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.17,
+   "autofix_steps": [
+    "把未声明的 numerator_r 改成已声明的 numerator"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "006_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 27,
+   "before": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient});",
+   "after": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient_r});",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.14,
+   "autofix_steps": [
+    "把未声明的 quotient_r 改成已声明的 quotient"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "007_typo",
+   "op": "typo",
+   "expect": "ELAB",
+   "line": 27,
+   "before": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient});",
+   "after": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient_r}) : -$signed({4'b0,quotient});",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "iverilog"
+   ],
+   "tools_any": [
+    "iverilog"
+   ],
+   "categories": [
+    "ELAB"
+   ],
+   "expected_hit": true,
+   "sim_ran": false,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.13,
+   "autofix_steps": [
+    "把未声明的 quotient_r 改成已声明的 quotient"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "008_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 18,
+   "before": "negative<=0; negative_delayed<=0;",
+   "after": "negative<=0; negative_delayed=0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [
+    "第 18 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "009_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 22,
+   "before": "numerator<=(u<<<3)+u;",
+   "after": "numerator=(u<<<3)+u;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [
+    "第 22 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "010_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 17,
+   "before": "numerator<=0; rounded_magnitude<=0; quotient<=0;",
+   "after": "numerator<=0; rounded_magnitude<=0; quotient=0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.23,
+   "autofix_steps": [
+    "第 17 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "011_blocking",
+   "op": "blocking",
+   "expect": "BLKSEQ",
+   "line": 19,
+   "before": "inverting_sum_q20<=0; product_q20<=0;",
+   "after": "inverting_sum_q20<=0; product_q20=0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "BLKSEQ",
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.28,
+   "autofix_steps": [
+    "第 19 行 '=' 改成 '<='"
+   ],
+   "autofix_pass": true
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "012_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 9,
+   "before": "reg [27:0] rounded_magnitude=0,quotient=0;",
+   "after": "reg [26:0] rounded_magnitude=0,quotient=0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "013_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 8,
+   "before": "reg signed [27:0] numerator=0;",
+   "after": "reg signed [26:0] numerator=0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "slang",
+    "verilator"
+   ],
+   "tools_any": [
+    "slang",
+    "verilator"
+   ],
+   "categories": [
+    "ELAB",
+    "RANGE",
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.3,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "014_width",
+   "op": "width",
+   "expect": "WIDTH_TRUNC",
+   "line": 11,
+   "before": "wire signed [27:0] u=unscaled_q20[27:0];",
+   "after": "wire signed [26:0] u=unscaled_q20[27:0];",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "verilator"
+   ],
+   "tools_any": [
+    "verilator"
+   ],
+   "categories": [
+    "WIDTH_EXPAND",
+    "WIDTH_TRUNC"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.44,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "015_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 11,
+   "before": "wire signed [27:0] u=unscaled_q20[27:0];",
+   "after": "wire [27:0] u=unscaled_q20[27:0];",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": false,
+   "initial_pass": true,
+   "check_seconds": 0.21,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "016_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 27,
+   "before": "inverting_sum_q20<=negative_delayed ? $signed({4'b0,quotient}) : -$signed({4'b0,quotient});",
+   "after": "inverting_sum_q20<=negative_delayed ? ({4'b0,quotient}) : -$signed({4'b0,quotient});",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN_CONV"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "017_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 4,
+   "before": "input wire signed [31:0] pp0_q20,pp1_q20,",
+   "after": "input wire [31:0] pp0_q20,pp1_q20,",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN_CONV"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.28,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "018_signed",
+   "op": "signed",
+   "expect": "SIGN",
+   "line": 6,
+   "before": "output reg signed [31:0] inverting_sum_q20=0,",
+   "after": "output reg [31:0] inverting_sum_q20=0,",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "slang"
+   ],
+   "categories": [
+    "SIGN_CONV"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "019_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) numerator <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.32,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "020_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "assign unscaled_q20 = 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules"
+   ],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.31,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "021_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) negative <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.22,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "022_multidrive",
+   "op": "multidrive",
+   "expect": "MULTIDRIVEN",
+   "line": null,
+   "before": "endmodule",
+   "after": "always @(posedge clk) negative_delayed <= 0;",
+   "static_major": true,
+   "static_any": true,
+   "tools_major": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "tools_any": [
+    "vcheck-rules",
+    "yosys"
+   ],
+   "categories": [
+    "MULTIDRIVEN"
+   ],
+   "expected_hit": true,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.25,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "023_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 23,
+   "before": "rounded_magnitude<=(numerator[27] ? -numerator : numerator)+28'd10;",
+   "after": "rounded_magnitude<=(numerator[27] ? -numerator : numerator)-28'd10;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.24,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "024_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 22,
+   "before": "numerator<=(u<<<3)+u;",
+   "after": "numerator<=(u<<<3)-u;",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "025_operator",
+   "op": "operator",
+   "expect": "FUNC",
+   "line": 12,
+   "before": "assign unscaled_q20=pp0_q20+(pp1_q20<<<2);",
+   "after": "assign unscaled_q20=pp0_q20-(pp1_q20<<<2);",
+   "static_major": false,
+   "static_any": false,
+   "tools_major": [],
+   "tools_any": [],
+   "categories": [],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": true,
+   "detected": true,
+   "detected_any": true,
+   "initial_pass": false,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "026_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 17,
+   "before": "numerator<=0; rounded_magnitude<=0; quotient<=0;",
+   "after": "numerator<=0;  quotient<=0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.29,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "027_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 17,
+   "before": "numerator<=0; rounded_magnitude<=0; quotient<=0;",
+   "after": "rounded_magnitude<=0; quotient<=0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.32,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "028_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 17,
+   "before": "numerator<=0; rounded_magnitude<=0; quotient<=0;",
+   "after": "numerator<=0; rounded_magnitude<=0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.26,
+   "autofix_steps": [],
+   "autofix_pass": false
+  },
+  {
+   "task": "weighted_sum",
+   "mutant": "029_reset",
+   "op": "reset",
+   "expect": "FUNC",
+   "line": 18,
+   "before": "negative<=0; negative_delayed<=0;",
+   "after": "negative_delayed<=0;",
+   "static_major": false,
+   "static_any": true,
+   "tools_major": [],
+   "tools_any": [
+    "vcheck-rules"
+   ],
+   "categories": [
+    "RESET"
+   ],
+   "expected_hit": false,
+   "sim_ran": true,
+   "sim_fail": false,
+   "detected": false,
+   "detected_any": true,
+   "initial_pass": true,
+   "check_seconds": 0.27,
+   "autofix_steps": [],
+   "autofix_pass": false
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "op": "blocking",
+ "expect": "BLKSEQ",
+ "desc": "时序块里 <= 改成 =",
+ "line": 47,
+ "before": "sync     <= 1'b0;",
+ "after": "sync     = 1'b0;"
+}

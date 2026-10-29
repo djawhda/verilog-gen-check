@@ -1,0 +1,8 @@
+{
+ "op": "offbyone",
+ "expect": "FUNC",
+ "desc": "比较边界差 1",
+ "line": 21,
+ "before": "wire               hi  = y > 48'sd1023;",
+ "after": "wire               hi  = y >= 48'sd1023;"
+}

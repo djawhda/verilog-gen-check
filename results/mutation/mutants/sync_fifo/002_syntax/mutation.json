@@ -1,0 +1,8 @@
+{
+ "op": "syntax",
+ "expect": "SYNTAX",
+ "desc": "删掉一个分号",
+ "line": 39,
+ "before": "dout <= mem[rp[DEPTH_LOG2-1:0]];",
+ "after": "dout <= mem[rp[DEPTH_LOG2-1:0]]"
+}
