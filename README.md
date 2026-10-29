@@ -1,5 +1,7 @@
 # verilog-gen-check
 
+🌐 **简体中文** | [English](README_EN.md)
+
 **大模型 Verilog 自动生成与五层静态纠错 skill** · LLM-driven Verilog generation with a five-layer static checker and closed-loop repair
 
 [![vcheck self-test](https://github.com/djawhda/verilog-gen-check/actions/workflows/ci.yml/badge.svg)](https://github.com/djawhda/verilog-gen-check/actions/workflows/ci.yml)
